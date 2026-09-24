@@ -1,2 +1,5 @@
-*.hyper
-Data/
+scripts/tableau_build/out/
+__pycache__/
+*.pyc
+~*.twbr
+hyperd.log

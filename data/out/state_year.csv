@@ -1,0 +1,361 @@
+year,state,programme,rate_per_1000
+2017-18,ACT,Home Care Packages,32.2
+2018-19,ACT,Home Care Packages,34.1
+2019-20,ACT,Home Care Packages,40.0
+2020-21,ACT,Home Care Packages,49.7
+2021-22,ACT,Home Care Packages,48.8
+2022-23,ACT,Home Care Packages,50.7
+2023-24,ACT,Home Care Packages,47.4
+2024-25,ACT,Home Care Packages,47.9
+2017-18,Aust,Home Care Packages,28.3
+2018-19,Aust,Home Care Packages,31.8
+2019-20,Aust,Home Care Packages,40.3
+2020-21,Aust,Home Care Packages,47.9
+2021-22,Aust,Home Care Packages,57.5
+2022-23,Aust,Home Care Packages,67.5
+2023-24,Aust,Home Care Packages,68.4
+2024-25,Aust,Home Care Packages,69.8
+2017-18,NSW,Home Care Packages,29.0
+2018-19,NSW,Home Care Packages,33.2
+2019-20,NSW,Home Care Packages,42.4
+2020-21,NSW,Home Care Packages,55.7
+2021-22,NSW,Home Care Packages,61.8
+2022-23,NSW,Home Care Packages,68.2
+2023-24,NSW,Home Care Packages,72.0
+2024-25,NSW,Home Care Packages,68.9
+2017-18,NT,Home Care Packages,31.1
+2018-19,NT,Home Care Packages,28.8
+2019-20,NT,Home Care Packages,23.1
+2020-21,NT,Home Care Packages,32.7
+2021-22,NT,Home Care Packages,37.0
+2022-23,NT,Home Care Packages,45.2
+2023-24,NT,Home Care Packages,38.4
+2024-25,NT,Home Care Packages,37.1
+2017-18,Qld,Home Care Packages,29.4
+2018-19,Qld,Home Care Packages,33.0
+2019-20,Qld,Home Care Packages,40.6
+2020-21,Qld,Home Care Packages,51.1
+2021-22,Qld,Home Care Packages,56.2
+2022-23,Qld,Home Care Packages,71.8
+2023-24,Qld,Home Care Packages,74.7
+2024-25,Qld,Home Care Packages,78.2
+2017-18,SA,Home Care Packages,27.2
+2018-19,SA,Home Care Packages,29.5
+2019-20,SA,Home Care Packages,37.1
+2020-21,SA,Home Care Packages,52.6
+2021-22,SA,Home Care Packages,61.5
+2022-23,SA,Home Care Packages,77.4
+2023-24,SA,Home Care Packages,75.7
+2024-25,SA,Home Care Packages,81.0
+2017-18,Tas,Home Care Packages,26.9
+2018-19,Tas,Home Care Packages,29.4
+2019-20,Tas,Home Care Packages,37.0
+2020-21,Tas,Home Care Packages,47.7
+2021-22,Tas,Home Care Packages,52.5
+2022-23,Tas,Home Care Packages,61.3
+2023-24,Tas,Home Care Packages,59.9
+2024-25,Tas,Home Care Packages,59.4
+2017-18,Vic,Home Care Packages,28.2
+2018-19,Vic,Home Care Packages,32.8
+2019-20,Vic,Home Care Packages,43.8
+2020-21,Vic,Home Care Packages,59.3
+2021-22,Vic,Home Care Packages,59.6
+2022-23,Vic,Home Care Packages,70.6
+2023-24,Vic,Home Care Packages,72.3
+2024-25,Vic,Home Care Packages,74.9
+2017-18,WA,Home Care Packages,26.9
+2018-19,WA,Home Care Packages,29.3
+2019-20,WA,Home Care Packages,34.4
+2020-21,WA,Home Care Packages,45.8
+2021-22,WA,Home Care Packages,50.9
+2022-23,WA,Home Care Packages,61.4
+2023-24,WA,Home Care Packages,54.6
+2024-25,WA,Home Care Packages,62.9
+2017-18,ACT,Home support (CHSP),213.3
+2018-19,ACT,Home support (CHSP),201.5
+2019-20,ACT,Home support (CHSP),183.8
+2020-21,ACT,Home support (CHSP),162.0
+2021-22,ACT,Home support (CHSP),147.7
+2022-23,ACT,Home support (CHSP),138.1
+2023-24,ACT,Home support (CHSP),151.8
+2024-25,ACT,Home support (CHSP),152.0
+2017-18,Aust,Home support (CHSP),189.3
+2018-19,Aust,Home support (CHSP),199.7
+2019-20,Aust,Home support (CHSP),194.6
+2020-21,Aust,Home support (CHSP),186.0
+2021-22,Aust,Home support (CHSP),178.9
+2022-23,Aust,Home support (CHSP),173.7
+2023-24,Aust,Home support (CHSP),169.9
+2024-25,Aust,Home support (CHSP),165.4
+2017-18,NSW,Home support (CHSP),172.5
+2018-19,NSW,Home support (CHSP),169.8
+2019-20,NSW,Home support (CHSP),161.3
+2020-21,NSW,Home support (CHSP),157.3
+2021-22,NSW,Home support (CHSP),150.6
+2022-23,NSW,Home support (CHSP),150.1
+2023-24,NSW,Home support (CHSP),150.1
+2024-25,NSW,Home support (CHSP),151.0
+2017-18,NT,Home support (CHSP),152.0
+2018-19,NT,Home support (CHSP),158.4
+2019-20,NT,Home support (CHSP),151.3
+2020-21,NT,Home support (CHSP),144.3
+2021-22,NT,Home support (CHSP),136.5
+2022-23,NT,Home support (CHSP),138.3
+2023-24,NT,Home support (CHSP),128.8
+2024-25,NT,Home support (CHSP),136.8
+2017-18,Qld,Home support (CHSP),228.5
+2018-19,Qld,Home support (CHSP),226.9
+2019-20,Qld,Home support (CHSP),225.4
+2020-21,Qld,Home support (CHSP),216.6
+2021-22,Qld,Home support (CHSP),206.8
+2022-23,Qld,Home support (CHSP),197.0
+2023-24,Qld,Home support (CHSP),189.3
+2024-25,Qld,Home support (CHSP),172.8
+2017-18,SA,Home support (CHSP),261.1
+2018-19,SA,Home support (CHSP),261.2
+2019-20,SA,Home support (CHSP),243.4
+2020-21,SA,Home support (CHSP),226.8
+2021-22,SA,Home support (CHSP),213.0
+2022-23,SA,Home support (CHSP),198.5
+2023-24,SA,Home support (CHSP),184.9
+2024-25,SA,Home support (CHSP),178.5
+2017-18,Tas,Home support (CHSP),238.3
+2018-19,Tas,Home support (CHSP),224.6
+2019-20,Tas,Home support (CHSP),217.4
+2020-21,Tas,Home support (CHSP),208.7
+2021-22,Tas,Home support (CHSP),206.5
+2022-23,Tas,Home support (CHSP),199.3
+2023-24,Tas,Home support (CHSP),191.5
+2024-25,Tas,Home support (CHSP),183.5
+2017-18,Vic,Home support (CHSP),221.6
+2018-19,Vic,Home support (CHSP),218.1
+2019-20,Vic,Home support (CHSP),217.0
+2020-21,Vic,Home support (CHSP),203.4
+2021-22,Vic,Home support (CHSP),194.1
+2022-23,Vic,Home support (CHSP),189.7
+2023-24,Vic,Home support (CHSP),187.5
+2024-25,Vic,Home support (CHSP),181.9
+2017-18,WA,Home support (CHSP),15.9
+2018-19,WA,Home support (CHSP),142.4
+2019-20,WA,Home support (CHSP),144.5
+2020-21,WA,Home support (CHSP),141.7
+2021-22,WA,Home support (CHSP),139.7
+2022-23,WA,Home support (CHSP),134.6
+2023-24,WA,Home support (CHSP),131.2
+2024-25,WA,Home support (CHSP),136.6
+2017-18,ACT,Residential aged care,57.4
+2018-19,ACT,Residential aged care,53.9
+2019-20,ACT,Residential aged care,52.2
+2020-21,ACT,Residential aged care,51.0
+2021-22,ACT,Residential aged care,50.1
+2022-23,ACT,Residential aged care,50.5
+2023-24,ACT,Residential aged care,48.6
+2024-25,ACT,Residential aged care,47.7
+2017-18,Aust,Residential aged care,58.1
+2018-19,Aust,Residential aged care,57.1
+2019-20,Aust,Residential aged care,56.0
+2020-21,Aust,Residential aged care,54.4
+2021-22,Aust,Residential aged care,53.6
+2022-23,Aust,Residential aged care,53.3
+2023-24,Aust,Residential aged care,51.7
+2024-25,Aust,Residential aged care,51.5
+2017-18,NSW,Residential aged care,59.2
+2018-19,NSW,Residential aged care,57.8
+2019-20,NSW,Residential aged care,56.4
+2020-21,NSW,Residential aged care,54.4
+2021-22,NSW,Residential aged care,53.1
+2022-23,NSW,Residential aged care,52.5
+2023-24,NSW,Residential aged care,51.4
+2024-25,NSW,Residential aged care,51.5
+2017-18,NT,Residential aged care,20.5
+2018-19,NT,Residential aged care,22.1
+2019-20,NT,Residential aged care,21.7
+2020-21,NT,Residential aged care,20.7
+2021-22,NT,Residential aged care,20.0
+2022-23,NT,Residential aged care,20.2
+2023-24,NT,Residential aged care,18.6
+2024-25,NT,Residential aged care,18.8
+2017-18,Qld,Residential aged care,54.9
+2018-19,Qld,Residential aged care,54.0
+2019-20,Qld,Residential aged care,53.8
+2020-21,Qld,Residential aged care,53.3
+2021-22,Qld,Residential aged care,53.7
+2022-23,Qld,Residential aged care,54.0
+2023-24,Qld,Residential aged care,51.6
+2024-25,Qld,Residential aged care,50.4
+2017-18,SA,Residential aged care,64.7
+2018-19,SA,Residential aged care,63.7
+2019-20,SA,Residential aged care,62.2
+2020-21,SA,Residential aged care,60.4
+2021-22,SA,Residential aged care,59.1
+2022-23,SA,Residential aged care,58.5
+2023-24,SA,Residential aged care,55.8
+2024-25,SA,Residential aged care,55.3
+2017-18,Tas,Residential aged care,56.1
+2018-19,Tas,Residential aged care,53.3
+2019-20,Tas,Residential aged care,51.9
+2020-21,Tas,Residential aged care,51.2
+2021-22,Tas,Residential aged care,50.5
+2022-23,Tas,Residential aged care,49.9
+2023-24,Tas,Residential aged care,46.6
+2024-25,Tas,Residential aged care,46.7
+2017-18,Vic,Residential aged care,62.4
+2018-19,Vic,Residential aged care,61.0
+2019-20,Vic,Residential aged care,59.7
+2020-21,Vic,Residential aged care,56.8
+2021-22,Vic,Residential aged care,55.7
+2022-23,Vic,Residential aged care,55.0
+2023-24,Vic,Residential aged care,54.8
+2024-25,Vic,Residential aged care,54.9
+2017-18,WA,Residential aged care,48.6
+2018-19,WA,Residential aged care,50.3
+2019-20,WA,Residential aged care,50.1
+2020-21,WA,Residential aged care,49.7
+2021-22,WA,Residential aged care,50.0
+2022-23,WA,Residential aged care,50.5
+2023-24,WA,Residential aged care,47.6
+2024-25,WA,Residential aged care,47.3
+2017-18,ACT,Residential respite,11.5
+2018-19,ACT,Residential respite,10.2
+2019-20,ACT,Residential respite,8.7
+2020-21,ACT,Residential respite,10.0
+2021-22,ACT,Residential respite,9.6
+2022-23,ACT,Residential respite,12.9
+2023-24,ACT,Residential respite,11.7
+2024-25,ACT,Residential respite,9.5
+2017-18,Aust,Residential respite,14.9
+2018-19,Aust,Residential respite,15.5
+2019-20,Aust,Residential respite,15.4
+2020-21,Aust,Residential respite,15.3
+2021-22,Aust,Residential respite,15.6
+2022-23,Aust,Residential respite,17.0
+2023-24,Aust,Residential respite,16.9
+2024-25,Aust,Residential respite,16.3
+2017-18,NSW,Residential respite,18.2
+2018-19,NSW,Residential respite,18.3
+2019-20,NSW,Residential respite,17.6
+2020-21,NSW,Residential respite,17.5
+2021-22,NSW,Residential respite,17.2
+2022-23,NSW,Residential respite,18.8
+2023-24,NSW,Residential respite,18.7
+2024-25,NSW,Residential respite,18.4
+2017-18,NT,Residential respite,9.3
+2018-19,NT,Residential respite,10.1
+2019-20,NT,Residential respite,7.9
+2020-21,NT,Residential respite,6.7
+2021-22,NT,Residential respite,6.1
+2022-23,NT,Residential respite,6.0
+2023-24,NT,Residential respite,4.7
+2024-25,NT,Residential respite,2.9
+2017-18,Qld,Residential respite,10.9
+2018-19,Qld,Residential respite,12.6
+2019-20,Qld,Residential respite,13.4
+2020-21,Qld,Residential respite,14.5
+2021-22,Qld,Residential respite,14.6
+2022-23,Qld,Residential respite,14.9
+2023-24,Qld,Residential respite,13.5
+2024-25,Qld,Residential respite,11.0
+2017-18,SA,Residential respite,21.7
+2018-19,SA,Residential respite,22.7
+2019-20,SA,Residential respite,23.1
+2020-21,SA,Residential respite,22.8
+2021-22,SA,Residential respite,22.5
+2022-23,SA,Residential respite,24.7
+2023-24,SA,Residential respite,22.7
+2024-25,SA,Residential respite,21.3
+2017-18,Tas,Residential respite,13.7
+2018-19,Tas,Residential respite,12.7
+2019-20,Tas,Residential respite,12.8
+2020-21,Tas,Residential respite,13.0
+2021-22,Tas,Residential respite,11.9
+2022-23,Tas,Residential respite,13.1
+2023-24,Tas,Residential respite,13.8
+2024-25,Tas,Residential respite,15.6
+2017-18,Vic,Residential respite,15.1
+2018-19,Vic,Residential respite,15.5
+2019-20,Vic,Residential respite,15.3
+2020-21,Vic,Residential respite,14.2
+2021-22,Vic,Residential respite,16.2
+2022-23,Vic,Residential respite,18.9
+2023-24,Vic,Residential respite,20.2
+2024-25,Vic,Residential respite,20.9
+2017-18,WA,Residential respite,7.5
+2018-19,WA,Residential respite,8.5
+2019-20,WA,Residential respite,8.6
+2020-21,WA,Residential respite,8.4
+2021-22,WA,Residential respite,7.7
+2022-23,WA,Residential respite,7.8
+2023-24,WA,Residential respite,8.1
+2024-25,WA,Residential respite,7.7
+2017-18,ACT,Transition care,4.9
+2018-19,ACT,Transition care,4.5
+2019-20,ACT,Transition care,3.6
+2020-21,ACT,Transition care,5.6
+2021-22,ACT,Transition care,5.1
+2022-23,ACT,Transition care,4.4
+2023-24,ACT,Transition care,4.1
+2024-25,ACT,Transition care,5.4
+2017-18,Aust,Transition care,6.0
+2018-19,Aust,Transition care,5.7
+2019-20,Aust,Transition care,5.6
+2020-21,Aust,Transition care,5.3
+2021-22,Aust,Transition care,4.7
+2022-23,Aust,Transition care,3.6
+2023-24,Aust,Transition care,3.4
+2024-25,Aust,Transition care,4.9
+2017-18,NSW,Transition care,5.7
+2018-19,NSW,Transition care,5.6
+2019-20,NSW,Transition care,5.5
+2020-21,NSW,Transition care,5.3
+2021-22,NSW,Transition care,4.8
+2022-23,NSW,Transition care,3.8
+2023-24,NSW,Transition care,3.8
+2024-25,NSW,Transition care,5.2
+2017-18,NT,Transition care,4.7
+2018-19,NT,Transition care,4.9
+2019-20,NT,Transition care,4.4
+2020-21,NT,Transition care,6.0
+2021-22,NT,Transition care,6.5
+2022-23,NT,Transition care,5.6
+2023-24,NT,Transition care,4.5
+2024-25,NT,Transition care,6.6
+2017-18,Qld,Transition care,5.2
+2018-19,Qld,Transition care,5.1
+2019-20,Qld,Transition care,5.0
+2020-21,Qld,Transition care,5.1
+2021-22,Qld,Transition care,4.4
+2022-23,Qld,Transition care,3.1
+2023-24,Qld,Transition care,2.9
+2024-25,Qld,Transition care,4.3
+2017-18,SA,Transition care,7.4
+2018-19,SA,Transition care,7.5
+2019-20,SA,Transition care,7.1
+2020-21,SA,Transition care,6.9
+2021-22,SA,Transition care,5.6
+2022-23,SA,Transition care,3.6
+2023-24,SA,Transition care,3.3
+2024-25,SA,Transition care,5.3
+2017-18,Tas,Transition care,5.5
+2018-19,Tas,Transition care,5.2
+2019-20,Tas,Transition care,5.3
+2020-21,Tas,Transition care,5.2
+2021-22,Tas,Transition care,4.3
+2022-23,Tas,Transition care,3.6
+2023-24,Tas,Transition care,3.6
+2024-25,Tas,Transition care,4.3
+2017-18,Vic,Transition care,6.5
+2018-19,Vic,Transition care,5.8
+2019-20,Vic,Transition care,5.9
+2020-21,Vic,Transition care,5.0
+2021-22,Vic,Transition care,4.4
+2022-23,Vic,Transition care,3.3
+2023-24,Vic,Transition care,3.3
+2024-25,Vic,Transition care,4.8
+2017-18,WA,Transition care,6.6
+2018-19,WA,Transition care,5.8
+2019-20,WA,Transition care,6.2
+2020-21,WA,Transition care,5.8
+2021-22,WA,Transition care,5.2
+2022-23,WA,Transition care,4.1
+2023-24,WA,Transition care,3.6
+2024-25,WA,Transition care,5.6

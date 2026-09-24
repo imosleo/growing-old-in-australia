@@ -1,0 +1,451 @@
+year,age_band,band_type,population,series,population_millions
+1971,65 and over,Cumulative,1090373.0,Actual,1.09
+1972,65 and over,Cumulative,1118306.0,Actual,1.118
+1973,65 and over,Cumulative,1148688.0,Actual,1.149
+1974,65 and over,Cumulative,1181158.0,Actual,1.181
+1975,65 and over,Cumulative,1211568.0,Actual,1.212
+1976,65 and over,Cumulative,1252827.0,Actual,1.253
+1977,65 and over,Cumulative,1287583.0,Actual,1.288
+1978,65 and over,Cumulative,1326812.0,Actual,1.327
+1979,65 and over,Cumulative,1369728.0,Actual,1.37
+1980,65 and over,Cumulative,1413277.0,Actual,1.413
+1981,65 and over,Cumulative,1454999.0,Actual,1.455
+1982,65 and over,Cumulative,1498768.0,Actual,1.499
+1983,65 and over,Cumulative,1535760.0,Actual,1.536
+1984,65 and over,Cumulative,1573786.0,Actual,1.574
+1985,65 and over,Cumulative,1621029.0,Actual,1.621
+1986,65 and over,Cumulative,1682111.0,Actual,1.682
+1987,65 and over,Cumulative,1739287.0,Actual,1.739
+1988,65 and over,Cumulative,1791383.0,Actual,1.791
+1989,65 and over,Cumulative,1846495.0,Actual,1.846
+1990,65 and over,Cumulative,1893381.0,Actual,1.893
+1991,65 and over,Cumulative,1950715.0,Actual,1.951
+1992,65 and over,Cumulative,2001848.0,Actual,2.002
+1993,65 and over,Cumulative,2052648.0,Actual,2.053
+1994,65 and over,Cumulative,2099825.0,Actual,2.1
+1995,65 and over,Cumulative,2143279.0,Actual,2.143
+1996,65 and over,Cumulative,2192239.0,Actual,2.192
+1997,65 and over,Cumulative,2237017.0,Actual,2.237
+1998,65 and over,Cumulative,2278504.0,Actual,2.279
+1999,65 and over,Cumulative,2321626.0,Actual,2.322
+2000,65 and over,Cumulative,2364260.0,Actual,2.364
+2001,65 and over,Cumulative,2419070.0,Actual,2.419
+2002,65 and over,Cumulative,2465669.0,Actual,2.466
+2003,65 and over,Cumulative,2511327.0,Actual,2.511
+2004,65 and over,Cumulative,2558857.0,Actual,2.559
+2005,65 and over,Cumulative,2611879.0,Actual,2.612
+2006,65 and over,Cumulative,2664064.0,Actual,2.664
+2007,65 and over,Cumulative,2736610.0,Actual,2.737
+2008,65 and over,Cumulative,2805167.0,Actual,2.805
+2009,65 and over,Cumulative,2890566.0,Actual,2.891
+2010,65 and over,Cumulative,2986675.0,Actual,2.987
+2011,65 and over,Cumulative,3087911.0,Actual,3.088
+2012,65 and over,Cumulative,3213853.0,Actual,3.214
+2013,65 and over,Cumulative,3330378.0,Actual,3.33
+2014,65 and over,Cumulative,3442148.0,Actual,3.442
+2015,65 and over,Cumulative,3554304.0,Actual,3.554
+2016,65 and over,Cumulative,3672251.0,Actual,3.672
+2017,65 and over,Cumulative,3788261.0,Actual,3.788
+2018,65 and over,Cumulative,3908143.0,Actual,3.908
+2019,65 and over,Cumulative,4033157.0,Actual,4.033
+2020,65 and over,Cumulative,4187801.0,Actual,4.188
+2021,65 and over,Cumulative,4314219.0,Actual,4.314
+2022,65 and over,Cumulative,4433376.0,Actual,4.433
+2023,65 and over,Cumulative,4560105.0,Actual,4.56
+2024,65 and over,Cumulative,4697558.0,Actual,4.698
+2025,65 and over,Cumulative,4839387.0,Actual,4.839
+2026,65 and over,Cumulative,5079135.0,Projected,5.079
+2027,65 and over,Cumulative,5246486.0,Projected,5.246
+2028,65 and over,Cumulative,5411263.0,Projected,5.411
+2029,65 and over,Cumulative,5567012.0,Projected,5.567
+2030,65 and over,Cumulative,5708695.0,Projected,5.709
+2031,65 and over,Cumulative,5840730.0,Projected,5.841
+2032,65 and over,Cumulative,5966939.0,Projected,5.967
+2033,65 and over,Cumulative,6092848.0,Projected,6.093
+2034,65 and over,Cumulative,6224307.0,Projected,6.224
+2035,65 and over,Cumulative,6353091.0,Projected,6.353
+2036,65 and over,Cumulative,6496689.0,Projected,6.497
+2037,65 and over,Cumulative,6630233.0,Projected,6.63
+2038,65 and over,Cumulative,6745556.0,Projected,6.746
+2039,65 and over,Cumulative,6847365.0,Projected,6.847
+2040,65 and over,Cumulative,6938167.0,Projected,6.938
+2041,65 and over,Cumulative,7020419.0,Projected,7.02
+2042,65 and over,Cumulative,7096954.0,Projected,7.097
+2043,65 and over,Cumulative,7170756.0,Projected,7.171
+2044,65 and over,Cumulative,7248501.0,Projected,7.249
+2045,65 and over,Cumulative,7329338.0,Projected,7.329
+1971,65-74,Exclusive,698017.0,Actual,0.698
+1972,65-74,Exclusive,718474.0,Actual,0.718
+1973,65-74,Exclusive,741672.0,Actual,0.742
+1974,65-74,Exclusive,766250.0,Actual,0.766
+1975,65-74,Exclusive,781464.0,Actual,0.781
+1976,65-74,Exclusive,804583.0,Actual,0.805
+1977,65-74,Exclusive,830140.0,Actual,0.83
+1978,65-74,Exclusive,857269.0,Actual,0.857
+1979,65-74,Exclusive,886693.0,Actual,0.887
+1980,65-74,Exclusive,913688.0,Actual,0.914
+1981,65-74,Exclusive,937676.0,Actual,0.938
+1982,65-74,Exclusive,960885.0,Actual,0.961
+1983,65-74,Exclusive,976005.0,Actual,0.976
+1984,65-74,Exclusive,989565.0,Actual,0.99
+1985,65-74,Exclusive,1010678.0,Actual,1.011
+1986,65-74,Exclusive,1043348.0,Actual,1.043
+1987,65-74,Exclusive,1075149.0,Actual,1.075
+1988,65-74,Exclusive,1101800.0,Actual,1.102
+1989,65-74,Exclusive,1127854.0,Actual,1.128
+1990,65-74,Exclusive,1150877.0,Actual,1.151
+1991,65-74,Exclusive,1182145.0,Actual,1.182
+1992,65-74,Exclusive,1208637.0,Actual,1.209
+1993,65-74,Exclusive,1237064.0,Actual,1.237
+1994,65-74,Exclusive,1264464.0,Actual,1.264
+1995,65-74,Exclusive,1277447.0,Actual,1.277
+1996,65-74,Exclusive,1288948.0,Actual,1.289
+1997,65-74,Exclusive,1293537.0,Actual,1.294
+1998,65-74,Exclusive,1296598.0,Actual,1.297
+1999,65-74,Exclusive,1300015.0,Actual,1.3
+2000,65-74,Exclusive,1302006.0,Actual,1.302
+2001,65-74,Exclusive,1311961.0,Actual,1.312
+2002,65-74,Exclusive,1324605.0,Actual,1.325
+2003,65-74,Exclusive,1336825.0,Actual,1.337
+2004,65-74,Exclusive,1353404.0,Actual,1.353
+2005,65-74,Exclusive,1373971.0,Actual,1.374
+2006,65-74,Exclusive,1397253.0,Actual,1.397
+2007,65-74,Exclusive,1440885.0,Actual,1.441
+2008,65-74,Exclusive,1485037.0,Actual,1.485
+2009,65-74,Exclusive,1546161.0,Actual,1.546
+2010,65-74,Exclusive,1613289.0,Actual,1.613
+2011,65-74,Exclusive,1681931.0,Actual,1.682
+2012,65-74,Exclusive,1776513.0,Actual,1.777
+2013,65-74,Exclusive,1859053.0,Actual,1.859
+2014,65-74,Exclusive,1932406.0,Actual,1.932
+2015,65-74,Exclusive,2006690.0,Actual,2.007
+2016,65-74,Exclusive,2083269.0,Actual,2.083
+2017,65-74,Exclusive,2152872.0,Actual,2.153
+2018,65-74,Exclusive,2227522.0,Actual,2.228
+2019,65-74,Exclusive,2292045.0,Actual,2.292
+2020,65-74,Exclusive,2373835.0,Actual,2.374
+2021,65-74,Exclusive,2427302.0,Actual,2.427
+2022,65-74,Exclusive,2447861.0,Actual,2.448
+2023,65-74,Exclusive,2485945.0,Actual,2.486
+2024,65-74,Exclusive,2533321.0,Actual,2.533
+2025,65-74,Exclusive,2580672.0,Actual,2.581
+2026,65-74,Exclusive,2703641.0,Projected,2.704
+2027,65-74,Exclusive,2775585.0,Projected,2.776
+2028,65-74,Exclusive,2843186.0,Projected,2.843
+2029,65-74,Exclusive,2904151.0,Projected,2.904
+2030,65-74,Exclusive,2949269.0,Projected,2.949
+2031,65-74,Exclusive,2982457.0,Projected,2.982
+2032,65-74,Exclusive,3010355.0,Projected,3.01
+2033,65-74,Exclusive,3036798.0,Projected,3.037
+2034,65-74,Exclusive,3067965.0,Projected,3.068
+2035,65-74,Exclusive,3096950.0,Projected,3.097
+2036,65-74,Exclusive,3136674.0,Projected,3.137
+2037,65-74,Exclusive,3169984.0,Projected,3.17
+2038,65-74,Exclusive,3189072.0,Projected,3.189
+2039,65-74,Exclusive,3204047.0,Projected,3.204
+2040,65-74,Exclusive,3221471.0,Projected,3.221
+2041,65-74,Exclusive,3239420.0,Projected,3.239
+2042,65-74,Exclusive,3256232.0,Projected,3.256
+2043,65-74,Exclusive,3270135.0,Projected,3.27
+2044,65-74,Exclusive,3282203.0,Projected,3.282
+2045,65-74,Exclusive,3298748.0,Projected,3.299
+1971,75 and over,Cumulative,392356.0,Actual,0.392
+1972,75 and over,Cumulative,399832.0,Actual,0.4
+1973,75 and over,Cumulative,407016.0,Actual,0.407
+1974,75 and over,Cumulative,414908.0,Actual,0.415
+1975,75 and over,Cumulative,430104.0,Actual,0.43
+1976,75 and over,Cumulative,448244.0,Actual,0.448
+1977,75 and over,Cumulative,457443.0,Actual,0.457
+1978,75 and over,Cumulative,469543.0,Actual,0.47
+1979,75 and over,Cumulative,483035.0,Actual,0.483
+1980,75 and over,Cumulative,499589.0,Actual,0.5
+1981,75 and over,Cumulative,517323.0,Actual,0.517
+1982,75 and over,Cumulative,537883.0,Actual,0.538
+1983,75 and over,Cumulative,559755.0,Actual,0.56
+1984,75 and over,Cumulative,584221.0,Actual,0.584
+1985,75 and over,Cumulative,610351.0,Actual,0.61
+1986,75 and over,Cumulative,638763.0,Actual,0.639
+1987,75 and over,Cumulative,664138.0,Actual,0.664
+1988,75 and over,Cumulative,689583.0,Actual,0.69
+1989,75 and over,Cumulative,718641.0,Actual,0.719
+1990,75 and over,Cumulative,742504.0,Actual,0.743
+1991,75 and over,Cumulative,768570.0,Actual,0.769
+1992,75 and over,Cumulative,793211.0,Actual,0.793
+1993,75 and over,Cumulative,815584.0,Actual,0.816
+1994,75 and over,Cumulative,835361.0,Actual,0.835
+1995,75 and over,Cumulative,865832.0,Actual,0.866
+1996,75 and over,Cumulative,903291.0,Actual,0.903
+1997,75 and over,Cumulative,943480.0,Actual,0.943
+1998,75 and over,Cumulative,981906.0,Actual,0.982
+1999,75 and over,Cumulative,1021611.0,Actual,1.022
+2000,75 and over,Cumulative,1062254.0,Actual,1.062
+2001,75 and over,Cumulative,1107109.0,Actual,1.107
+2002,75 and over,Cumulative,1141064.0,Actual,1.141
+2003,75 and over,Cumulative,1174502.0,Actual,1.175
+2004,75 and over,Cumulative,1205453.0,Actual,1.205
+2005,75 and over,Cumulative,1237908.0,Actual,1.238
+2006,75 and over,Cumulative,1266811.0,Actual,1.267
+2007,75 and over,Cumulative,1295725.0,Actual,1.296
+2008,75 and over,Cumulative,1320130.0,Actual,1.32
+2009,75 and over,Cumulative,1344405.0,Actual,1.344
+2010,75 and over,Cumulative,1373386.0,Actual,1.373
+2011,75 and over,Cumulative,1405980.0,Actual,1.406
+2012,75 and over,Cumulative,1437340.0,Actual,1.437
+2013,75 and over,Cumulative,1471325.0,Actual,1.471
+2014,75 and over,Cumulative,1509742.0,Actual,1.51
+2015,75 and over,Cumulative,1547614.0,Actual,1.548
+2016,75 and over,Cumulative,1588982.0,Actual,1.589
+2017,75 and over,Cumulative,1635389.0,Actual,1.635
+2018,75 and over,Cumulative,1680621.0,Actual,1.681
+2019,75 and over,Cumulative,1741112.0,Actual,1.741
+2020,75 and over,Cumulative,1813966.0,Actual,1.814
+2021,75 and over,Cumulative,1886917.0,Actual,1.887
+2022,75 and over,Cumulative,1985515.0,Actual,1.986
+2023,75 and over,Cumulative,2074160.0,Actual,2.074
+2024,75 and over,Cumulative,2164237.0,Actual,2.164
+2025,75 and over,Cumulative,2258715.0,Actual,2.259
+2026,75 and over,Cumulative,2375494.0,Projected,2.375
+2027,75 and over,Cumulative,2470901.0,Projected,2.471
+2028,75 and over,Cumulative,2568077.0,Projected,2.568
+2029,75 and over,Cumulative,2662861.0,Projected,2.663
+2030,75 and over,Cumulative,2759426.0,Projected,2.759
+2031,75 and over,Cumulative,2858273.0,Projected,2.858
+2032,75 and over,Cumulative,2956584.0,Projected,2.957
+2033,75 and over,Cumulative,3056050.0,Projected,3.056
+2034,75 and over,Cumulative,3156342.0,Projected,3.156
+2035,75 and over,Cumulative,3256141.0,Projected,3.256
+2036,75 and over,Cumulative,3360015.0,Projected,3.36
+2037,75 and over,Cumulative,3460249.0,Projected,3.46
+2038,75 and over,Cumulative,3556484.0,Projected,3.556
+2039,75 and over,Cumulative,3643318.0,Projected,3.643
+2040,75 and over,Cumulative,3716696.0,Projected,3.717
+2041,75 and over,Cumulative,3780999.0,Projected,3.781
+2042,75 and over,Cumulative,3840722.0,Projected,3.841
+2043,75 and over,Cumulative,3900621.0,Projected,3.901
+2044,75 and over,Cumulative,3966298.0,Projected,3.966
+2045,75 and over,Cumulative,4030590.0,Projected,4.031
+1971,75-84,Exclusive,325426.0,Actual,0.325
+1972,75-84,Exclusive,330048.0,Actual,0.33
+1973,75-84,Exclusive,333941.0,Actual,0.334
+1974,75-84,Exclusive,338366.0,Actual,0.338
+1975,75-84,Exclusive,350238.0,Actual,0.35
+1976,75-84,Exclusive,363645.0,Actual,0.364
+1977,75-84,Exclusive,369557.0,Actual,0.37
+1978,75-84,Exclusive,377903.0,Actual,0.378
+1979,75-84,Exclusive,388331.0,Actual,0.388
+1980,75-84,Exclusive,400898.0,Actual,0.401
+1981,75-84,Exclusive,414734.0,Actual,0.415
+1982,75-84,Exclusive,431692.0,Actual,0.432
+1983,75-84,Exclusive,450472.0,Actual,0.45
+1984,75-84,Exclusive,470798.0,Actual,0.471
+1985,75-84,Exclusive,489133.0,Actual,0.489
+1986,75-84,Exclusive,509467.0,Actual,0.509
+1987,75-84,Exclusive,530690.0,Actual,0.531
+1988,75-84,Exclusive,551885.0,Actual,0.552
+1989,75-84,Exclusive,575453.0,Actual,0.575
+1990,75-84,Exclusive,595329.0,Actual,0.595
+1991,75-84,Exclusive,614323.0,Actual,0.614
+1992,75-84,Exclusive,630483.0,Actual,0.63
+1993,75-84,Exclusive,643785.0,Actual,0.644
+1994,75-84,Exclusive,655096.0,Actual,0.655
+1995,75-84,Exclusive,675435.0,Actual,0.675
+1996,75-84,Exclusive,702386.0,Actual,0.702
+1997,75-84,Exclusive,731247.0,Actual,0.731
+1998,75-84,Exclusive,758134.0,Actual,0.758
+1999,75-84,Exclusive,784073.0,Actual,0.784
+2000,75-84,Exclusive,811132.0,Actual,0.811
+2001,75-84,Exclusive,843667.0,Actual,0.844
+2002,75-84,Exclusive,868512.0,Actual,0.869
+2003,75-84,Exclusive,895039.0,Actual,0.895
+2004,75-84,Exclusive,919175.0,Actual,0.919
+2005,75-84,Exclusive,935717.0,Actual,0.936
+2006,75-84,Exclusive,948119.0,Actual,0.948
+2007,75-84,Exclusive,958589.0,Actual,0.959
+2008,75-84,Exclusive,967574.0,Actual,0.968
+2009,75-84,Exclusive,976176.0,Actual,0.976
+2010,75-84,Exclusive,986792.0,Actual,0.987
+2011,75-84,Exclusive,1002373.0,Actual,1.002
+2012,75-84,Exclusive,1016815.0,Actual,1.017
+2013,75-84,Exclusive,1033567.0,Actual,1.034
+2014,75-84,Exclusive,1055608.0,Actual,1.056
+2015,75-84,Exclusive,1078669.0,Actual,1.079
+2016,75-84,Exclusive,1106303.0,Actual,1.106
+2017,75-84,Exclusive,1144527.0,Actual,1.145
+2018,75-84,Exclusive,1181864.0,Actual,1.182
+2019,75-84,Exclusive,1233383.0,Actual,1.233
+2020,75-84,Exclusive,1294751.0,Actual,1.295
+2021,75-84,Exclusive,1352689.0,Actual,1.353
+2022,75-84,Exclusive,1438333.0,Actual,1.438
+2023,75-84,Exclusive,1513107.0,Actual,1.513
+2024,75-84,Exclusive,1583475.0,Actual,1.583
+2025,75-84,Exclusive,1655954.0,Actual,1.656
+2026,75-84,Exclusive,1745735.0,Projected,1.746
+2027,75-84,Exclusive,1813789.0,Projected,1.814
+2028,75-84,Exclusive,1884746.0,Projected,1.885
+2029,75-84,Exclusive,1944803.0,Projected,1.945
+2030,75-84,Exclusive,2003160.0,Projected,2.003
+2031,75-84,Exclusive,2061575.0,Projected,2.062
+2032,75-84,Exclusive,2097918.0,Projected,2.098
+2033,75-84,Exclusive,2144805.0,Projected,2.145
+2034,75-84,Exclusive,2198510.0,Projected,2.199
+2035,75-84,Exclusive,2252433.0,Projected,2.252
+2036,75-84,Exclusive,2312954.0,Projected,2.313
+2037,75-84,Exclusive,2373387.0,Projected,2.373
+2038,75-84,Exclusive,2430155.0,Projected,2.43
+2039,75-84,Exclusive,2480527.0,Projected,2.481
+2040,75-84,Exclusive,2517181.0,Projected,2.517
+2041,75-84,Exclusive,2544004.0,Projected,2.544
+2042,75-84,Exclusive,2566758.0,Projected,2.567
+2043,75-84,Exclusive,2588807.0,Projected,2.589
+2044,75-84,Exclusive,2615826.0,Projected,2.616
+2045,75-84,Exclusive,2641374.0,Projected,2.641
+1971,85 and over,Exclusive,66930.0,Actual,0.067
+1972,85 and over,Exclusive,69784.0,Actual,0.07
+1973,85 and over,Exclusive,73075.0,Actual,0.073
+1974,85 and over,Exclusive,76542.0,Actual,0.077
+1975,85 and over,Exclusive,79866.0,Actual,0.08
+1976,85 and over,Exclusive,84599.0,Actual,0.085
+1977,85 and over,Exclusive,87886.0,Actual,0.088
+1978,85 and over,Exclusive,91640.0,Actual,0.092
+1979,85 and over,Exclusive,94704.0,Actual,0.095
+1980,85 and over,Exclusive,98691.0,Actual,0.099
+1981,85 and over,Exclusive,102589.0,Actual,0.103
+1982,85 and over,Exclusive,106191.0,Actual,0.106
+1983,85 and over,Exclusive,109283.0,Actual,0.109
+1984,85 and over,Exclusive,113423.0,Actual,0.113
+1985,85 and over,Exclusive,121218.0,Actual,0.121
+1986,85 and over,Exclusive,129296.0,Actual,0.129
+1987,85 and over,Exclusive,133448.0,Actual,0.133
+1988,85 and over,Exclusive,137698.0,Actual,0.138
+1989,85 and over,Exclusive,143188.0,Actual,0.143
+1990,85 and over,Exclusive,147175.0,Actual,0.147
+1991,85 and over,Exclusive,154247.0,Actual,0.154
+1992,85 and over,Exclusive,162728.0,Actual,0.163
+1993,85 and over,Exclusive,171799.0,Actual,0.172
+1994,85 and over,Exclusive,180265.0,Actual,0.18
+1995,85 and over,Exclusive,190397.0,Actual,0.19
+1996,85 and over,Exclusive,200905.0,Actual,0.201
+1997,85 and over,Exclusive,212233.0,Actual,0.212
+1998,85 and over,Exclusive,223772.0,Actual,0.224
+1999,85 and over,Exclusive,237538.0,Actual,0.238
+2000,85 and over,Exclusive,251122.0,Actual,0.251
+2001,85 and over,Exclusive,263442.0,Actual,0.263
+2002,85 and over,Exclusive,272552.0,Actual,0.273
+2003,85 and over,Exclusive,279463.0,Actual,0.279
+2004,85 and over,Exclusive,286278.0,Actual,0.286
+2005,85 and over,Exclusive,302191.0,Actual,0.302
+2006,85 and over,Exclusive,318692.0,Actual,0.319
+2007,85 and over,Exclusive,337136.0,Actual,0.337
+2008,85 and over,Exclusive,352556.0,Actual,0.353
+2009,85 and over,Exclusive,368229.0,Actual,0.368
+2010,85 and over,Exclusive,386594.0,Actual,0.387
+2011,85 and over,Exclusive,403607.0,Actual,0.404
+2012,85 and over,Exclusive,420525.0,Actual,0.421
+2013,85 and over,Exclusive,437758.0,Actual,0.438
+2014,85 and over,Exclusive,454134.0,Actual,0.454
+2015,85 and over,Exclusive,468945.0,Actual,0.469
+2016,85 and over,Exclusive,482679.0,Actual,0.483
+2017,85 and over,Exclusive,490862.0,Actual,0.491
+2018,85 and over,Exclusive,498757.0,Actual,0.499
+2019,85 and over,Exclusive,507729.0,Actual,0.508
+2020,85 and over,Exclusive,519215.0,Actual,0.519
+2021,85 and over,Exclusive,534228.0,Actual,0.534
+2022,85 and over,Exclusive,547182.0,Actual,0.547
+2023,85 and over,Exclusive,561053.0,Actual,0.561
+2024,85 and over,Exclusive,580762.0,Actual,0.581
+2025,85 and over,Exclusive,602761.0,Actual,0.603
+2026,85 and over,Exclusive,629759.0,Projected,0.63
+2027,85 and over,Exclusive,657112.0,Projected,0.657
+2028,85 and over,Exclusive,683331.0,Projected,0.683
+2029,85 and over,Exclusive,718058.0,Projected,0.718
+2030,85 and over,Exclusive,756266.0,Projected,0.756
+2031,85 and over,Exclusive,796698.0,Projected,0.797
+2032,85 and over,Exclusive,858666.0,Projected,0.859
+2033,85 and over,Exclusive,911245.0,Projected,0.911
+2034,85 and over,Exclusive,957832.0,Projected,0.958
+2035,85 and over,Exclusive,1003708.0,Projected,1.004
+2036,85 and over,Exclusive,1047061.0,Projected,1.047
+2037,85 and over,Exclusive,1086862.0,Projected,1.087
+2038,85 and over,Exclusive,1126329.0,Projected,1.126
+2039,85 and over,Exclusive,1162791.0,Projected,1.163
+2040,85 and over,Exclusive,1199515.0,Projected,1.2
+2041,85 and over,Exclusive,1236995.0,Projected,1.237
+2042,85 and over,Exclusive,1273964.0,Projected,1.274
+2043,85 and over,Exclusive,1311814.0,Projected,1.312
+2044,85 and over,Exclusive,1350472.0,Projected,1.35
+2045,85 and over,Exclusive,1389216.0,Projected,1.389
+1971,85 and over (cum.),Cumulative,66930.0,Actual,0.067
+1972,85 and over (cum.),Cumulative,69784.0,Actual,0.07
+1973,85 and over (cum.),Cumulative,73075.0,Actual,0.073
+1974,85 and over (cum.),Cumulative,76542.0,Actual,0.077
+1975,85 and over (cum.),Cumulative,79866.0,Actual,0.08
+1976,85 and over (cum.),Cumulative,84599.0,Actual,0.085
+1977,85 and over (cum.),Cumulative,87886.0,Actual,0.088
+1978,85 and over (cum.),Cumulative,91640.0,Actual,0.092
+1979,85 and over (cum.),Cumulative,94704.0,Actual,0.095
+1980,85 and over (cum.),Cumulative,98691.0,Actual,0.099
+1981,85 and over (cum.),Cumulative,102589.0,Actual,0.103
+1982,85 and over (cum.),Cumulative,106191.0,Actual,0.106
+1983,85 and over (cum.),Cumulative,109283.0,Actual,0.109
+1984,85 and over (cum.),Cumulative,113423.0,Actual,0.113
+1985,85 and over (cum.),Cumulative,121218.0,Actual,0.121
+1986,85 and over (cum.),Cumulative,129296.0,Actual,0.129
+1987,85 and over (cum.),Cumulative,133448.0,Actual,0.133
+1988,85 and over (cum.),Cumulative,137698.0,Actual,0.138
+1989,85 and over (cum.),Cumulative,143188.0,Actual,0.143
+1990,85 and over (cum.),Cumulative,147175.0,Actual,0.147
+1991,85 and over (cum.),Cumulative,154247.0,Actual,0.154
+1992,85 and over (cum.),Cumulative,162728.0,Actual,0.163
+1993,85 and over (cum.),Cumulative,171799.0,Actual,0.172
+1994,85 and over (cum.),Cumulative,180265.0,Actual,0.18
+1995,85 and over (cum.),Cumulative,190397.0,Actual,0.19
+1996,85 and over (cum.),Cumulative,200905.0,Actual,0.201
+1997,85 and over (cum.),Cumulative,212233.0,Actual,0.212
+1998,85 and over (cum.),Cumulative,223772.0,Actual,0.224
+1999,85 and over (cum.),Cumulative,237538.0,Actual,0.238
+2000,85 and over (cum.),Cumulative,251122.0,Actual,0.251
+2001,85 and over (cum.),Cumulative,263442.0,Actual,0.263
+2002,85 and over (cum.),Cumulative,272552.0,Actual,0.273
+2003,85 and over (cum.),Cumulative,279463.0,Actual,0.279
+2004,85 and over (cum.),Cumulative,286278.0,Actual,0.286
+2005,85 and over (cum.),Cumulative,302191.0,Actual,0.302
+2006,85 and over (cum.),Cumulative,318692.0,Actual,0.319
+2007,85 and over (cum.),Cumulative,337136.0,Actual,0.337
+2008,85 and over (cum.),Cumulative,352556.0,Actual,0.353
+2009,85 and over (cum.),Cumulative,368229.0,Actual,0.368
+2010,85 and over (cum.),Cumulative,386594.0,Actual,0.387
+2011,85 and over (cum.),Cumulative,403607.0,Actual,0.404
+2012,85 and over (cum.),Cumulative,420525.0,Actual,0.421
+2013,85 and over (cum.),Cumulative,437758.0,Actual,0.438
+2014,85 and over (cum.),Cumulative,454134.0,Actual,0.454
+2015,85 and over (cum.),Cumulative,468945.0,Actual,0.469
+2016,85 and over (cum.),Cumulative,482679.0,Actual,0.483
+2017,85 and over (cum.),Cumulative,490862.0,Actual,0.491
+2018,85 and over (cum.),Cumulative,498757.0,Actual,0.499
+2019,85 and over (cum.),Cumulative,507729.0,Actual,0.508
+2020,85 and over (cum.),Cumulative,519215.0,Actual,0.519
+2021,85 and over (cum.),Cumulative,534228.0,Actual,0.534
+2022,85 and over (cum.),Cumulative,547182.0,Actual,0.547
+2023,85 and over (cum.),Cumulative,561053.0,Actual,0.561
+2024,85 and over (cum.),Cumulative,580762.0,Actual,0.581
+2025,85 and over (cum.),Cumulative,602761.0,Actual,0.603
+2026,85 and over (cum.),Cumulative,629759.0,Projected,0.63
+2027,85 and over (cum.),Cumulative,657112.0,Projected,0.657
+2028,85 and over (cum.),Cumulative,683331.0,Projected,0.683
+2029,85 and over (cum.),Cumulative,718058.0,Projected,0.718
+2030,85 and over (cum.),Cumulative,756266.0,Projected,0.756
+2031,85 and over (cum.),Cumulative,796698.0,Projected,0.797
+2032,85 and over (cum.),Cumulative,858666.0,Projected,0.859
+2033,85 and over (cum.),Cumulative,911245.0,Projected,0.911
+2034,85 and over (cum.),Cumulative,957832.0,Projected,0.958
+2035,85 and over (cum.),Cumulative,1003708.0,Projected,1.004
+2036,85 and over (cum.),Cumulative,1047061.0,Projected,1.047
+2037,85 and over (cum.),Cumulative,1086862.0,Projected,1.087
+2038,85 and over (cum.),Cumulative,1126329.0,Projected,1.126
+2039,85 and over (cum.),Cumulative,1162791.0,Projected,1.163
+2040,85 and over (cum.),Cumulative,1199515.0,Projected,1.2
+2041,85 and over (cum.),Cumulative,1236995.0,Projected,1.237
+2042,85 and over (cum.),Cumulative,1273964.0,Projected,1.274
+2043,85 and over (cum.),Cumulative,1311814.0,Projected,1.312
+2044,85 and over (cum.),Cumulative,1350472.0,Projected,1.35
+2045,85 and over (cum.),Cumulative,1389216.0,Projected,1.389

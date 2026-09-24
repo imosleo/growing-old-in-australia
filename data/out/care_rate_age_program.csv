@@ -1,0 +1,31 @@
+age_band,programme,rate_per_1000,band_sort,per_100_people
+65-69,Home Care Packages,9.0,0,0.9
+70-74,Home Care Packages,31.1,1,3.1
+75-79,Home Care Packages,63.0,2,6.3
+80-84,Home Care Packages,123.7,3,12.4
+85-89,Home Care Packages,220.9,4,22.1
+90+,Home Care Packages,308.0,5,30.8
+65-69,Home support (CHSP),43.2,0,4.3
+70-74,Home support (CHSP),103.7,1,10.4
+75-79,Home support (CHSP),190.4,2,19.0
+80-84,Home support (CHSP),307.7,3,30.8
+85-89,Home support (CHSP),404.9,4,40.5
+90+,Home support (CHSP),397.4,5,39.7
+65-69,Residential aged care,4.0,0,0.4
+70-74,Residential aged care,13.4,1,1.3
+75-79,Residential aged care,30.8,2,3.1
+80-84,Residential aged care,72.8,3,7.3
+85-89,Residential aged care,169.6,4,17.0
+90+,Residential aged care,413.5,5,41.4
+65-69,Residential respite,1.6,0,0.2
+70-74,Residential respite,4.5,1,0.4
+75-79,Residential respite,11.1,2,1.1
+80-84,Residential respite,26.0,3,2.6
+85-89,Residential respite,56.2,4,5.6
+90+,Residential respite,107.7,5,10.8
+65-69,Transition care,1.2,0,0.1
+70-74,Transition care,2.5,1,0.2
+75-79,Transition care,4.8,2,0.5
+80-84,Transition care,8.6,3,0.9
+85-89,Transition care,14.6,4,1.5
+90+,Transition care,17.9,5,1.8
