@@ -1,0 +1,2943 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='pop_bands' inline='true' name='federated.0popbands000000000000000' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pop_bands' name='textscan.0popbands000000000000000'>
+            <connection class='textscan' directory='C:/Users/xpert/Vault_Monash/My Vault/FIT3179/DV1 Aged Care/Growing Old in Australia/data' filename='pop_bands.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0popbands000000000000000' name='pop_bands.csv' table='[pop_bands#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='age_band' ordinal='1' />
+            <column datatype='string' name='band_type' ordinal='2' />
+            <column datatype='real' name='population' ordinal='3' />
+            <column datatype='string' name='series' ordinal='4' />
+            <column datatype='real' name='population_millions' ordinal='5' />
+          </columns>
+        </relation>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column caption='Age group' datatype='string' name='[age_band]' role='dimension' type='nominal' />
+      <column caption='Band type' datatype='string' name='[band_type]' role='dimension' type='nominal' />
+      <column caption='People' datatype='real' name='[population]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='string' name='[series]' role='dimension' type='nominal' />
+      <column datatype='real' name='[population_millions]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/0popbands000000000000000.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/02/2026 06:00:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_band</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>band_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[band_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>band_type</remote-alias>
+              <ordinal>2</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>population</remote-alias>
+              <ordinal>3</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>375</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>series</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[series]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>series</remote-alias>
+              <ordinal>4</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population_millions</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[population_millions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>population_millions</remote-alias>
+              <ordinal>5</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>363</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:age_band:nk]' type='palette'>
+            <map to='#9ec5f4'>
+              <bucket>&quot;65-74&quot;</bucket>
+            </map>
+            <map to='#3987e5'>
+              <bucket>&quot;75-84&quot;</bucket>
+            </map>
+            <map to='#184f95'>
+              <bucket>&quot;85 and over&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='pop_pyramid' inline='true' name='federated.0pyramid0000000000000000' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pop_pyramid' name='textscan.0pyramid0000000000000000'>
+            <connection class='textscan' directory='C:/Users/xpert/Vault_Monash/My Vault/FIT3179/DV1 Aged Care/Growing Old in Australia/data' filename='pop_pyramid.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0pyramid0000000000000000' name='pop_pyramid.csv' table='[pop_pyramid#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='age_band' ordinal='0' />
+            <column datatype='string' name='sex' ordinal='1' />
+            <column datatype='integer' name='value' ordinal='2' />
+            <column datatype='integer' name='year' ordinal='3' />
+            <column datatype='string' name='series' ordinal='4' />
+            <column datatype='real' name='share_pct' ordinal='5' />
+            <column datatype='integer' name='signed_population' ordinal='6' />
+            <column datatype='real' name='signed_share_pct' ordinal='7' />
+            <column datatype='integer' name='band_sort' ordinal='8' />
+          </columns>
+        </relation>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age group' datatype='string' name='[age_band]' role='dimension' type='nominal' />
+      <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column caption='People' datatype='integer' name='[value]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column caption='Year' datatype='string' name='[series]' role='dimension' type='nominal' />
+      <column datatype='real' name='[share_pct]' role='measure' type='quantitative' />
+      <column caption='People' datatype='integer' name='[signed_population]' role='measure' type='quantitative' />
+      <column datatype='real' name='[signed_share_pct]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[band_sort]' role='dimension' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/0pyramid0000000000000000.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/02/2026 06:00:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age_band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_band</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sex</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sex</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>value</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>value</remote-alias>
+              <ordinal>2</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>3</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>series</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[series]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>series</remote-alias>
+              <ordinal>4</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>share_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[share_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>share_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>83</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>signed_population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[signed_population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>signed_population</remote-alias>
+              <ordinal>6</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>signed_share_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[signed_share_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>signed_share_pct</remote-alias>
+              <ordinal>7</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>band_sort</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[band_sort]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>band_sort</remote-alias>
+              <ordinal>8</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:sex:nk]' type='palette'>
+            <map to='#4a6b8a'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#8c5f7d'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='care_rate_program_year' inline='true' name='federated.0progyear000000000000000' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='care_rate_program_year' name='textscan.0progyear000000000000000'>
+            <connection class='textscan' directory='C:/Users/xpert/Vault_Monash/My Vault/FIT3179/DV1 Aged Care/Growing Old in Australia/data' filename='care_rate_program_year.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0progyear000000000000000' name='care_rate_program_year.csv' table='[care_rate_program_year#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='year' ordinal='0' />
+            <column datatype='string' name='programme' ordinal='1' />
+            <column datatype='real' name='rate_per_1000' ordinal='2' />
+          </columns>
+        </relation>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+      <column caption='Programme' datatype='string' name='[programme]' role='dimension' type='nominal' />
+      <column caption='Recipients per 1,000 aged 65+' datatype='real' name='[rate_per_1000]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/0progyear000000000000000.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/02/2026 06:00:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>programme</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[programme]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>programme</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rate_per_1000</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rate_per_1000]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rate_per_1000</remote-alias>
+              <ordinal>2</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:programme:nk]' type='palette'>
+            <map to='#2a78d6'>
+              <bucket>&quot;Residential aged care&quot;</bucket>
+            </map>
+            <map to='#eb6834'>
+              <bucket>&quot;Home Care Packages&quot;</bucket>
+            </map>
+            <map to='#1baf7a'>
+              <bucket>&quot;Home support (CHSP)&quot;</bucket>
+            </map>
+            <map to='#eda100'>
+              <bucket>&quot;Residential respite&quot;</bucket>
+            </map>
+            <map to='#e87ba4'>
+              <bucket>&quot;Transition care&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='care_rate_age_program' inline='true' name='federated.0ageprog0000000000000000' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='care_rate_age_program' name='textscan.0ageprog0000000000000000'>
+            <connection class='textscan' directory='C:/Users/xpert/Vault_Monash/My Vault/FIT3179/DV1 Aged Care/Growing Old in Australia/data' filename='care_rate_age_program.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ageprog0000000000000000' name='care_rate_age_program.csv' table='[care_rate_age_program#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='age_band' ordinal='0' />
+            <column datatype='string' name='programme' ordinal='1' />
+            <column datatype='real' name='rate_per_1000' ordinal='2' />
+            <column datatype='integer' name='band_sort' ordinal='3' />
+            <column datatype='real' name='per_100_people' ordinal='4' />
+          </columns>
+        </relation>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age group' datatype='string' name='[age_band]' role='dimension' type='nominal' />
+      <column caption='Programme' datatype='string' name='[programme]' role='dimension' type='nominal' />
+      <column caption='Recipients per 1,000 aged 65+' datatype='real' name='[rate_per_1000]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[band_sort]' role='dimension' type='quantitative' />
+      <column datatype='real' name='[per_100_people]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/0ageprog0000000000000000.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/02/2026 06:00:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age_band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_band</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>programme</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[programme]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>programme</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rate_per_1000</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rate_per_1000]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rate_per_1000</remote-alias>
+              <ordinal>2</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>band_sort</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[band_sort]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>band_sort</remote-alias>
+              <ordinal>3</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>per_100_people</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[per_100_people]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>per_100_people</remote-alias>
+              <ordinal>4</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='waffle' inline='true' name='federated.0waffle00000000000000000' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='waffle' name='textscan.0waffle00000000000000000'>
+            <connection class='textscan' directory='C:/Users/xpert/Vault_Monash/My Vault/FIT3179/DV1 Aged Care/Growing Old in Australia/data' filename='waffle.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0waffle00000000000000000' name='waffle.csv' table='[waffle#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='integer' name='cell' ordinal='0' />
+            <column datatype='integer' name='row' ordinal='1' />
+            <column datatype='integer' name='col' ordinal='2' />
+            <column datatype='string' name='category' ordinal='3' />
+            <column datatype='string' name='age_group' ordinal='4' />
+          </columns>
+        </relation>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[cell]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[row]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[col]' role='dimension' type='quantitative' />
+      <column caption='Group' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column datatype='string' name='[age_group]' role='dimension' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/0waffle00000000000000000.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/02/2026 06:00:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>cell</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cell]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cell</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>row</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[row]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>row</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>col</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[col]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>col</remote-alias>
+              <ordinal>2</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>3</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_group</remote-alias>
+              <ordinal>4</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:category:nk]' type='palette'>
+            <map to='#2a78d6'>
+              <bucket>&quot;In permanent residential aged care&quot;</bucket>
+            </map>
+            <map to='#e1e0d9'>
+              <bucket>&quot;Not in residential aged care&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='remoteness' inline='true' name='federated.0remote00000000000000000' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='remoteness' name='textscan.0remote00000000000000000'>
+            <connection class='textscan' directory='C:/Users/xpert/Vault_Monash/My Vault/FIT3179/DV1 Aged Care/Growing Old in Australia/data' filename='remoteness.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0remote00000000000000000' name='remoteness.csv' table='[remoteness#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='year' ordinal='0' />
+            <column datatype='string' name='remoteness' ordinal='1' />
+            <column datatype='integer' name='remoteness_sort' ordinal='2' />
+            <column datatype='real' name='population_65plus_000' ordinal='3' />
+            <column datatype='real' name='share_of_places_pct' ordinal='4' />
+            <column datatype='integer' name='residential_places' ordinal='5' />
+            <column datatype='real' name='places_per_1000_aged_65plus' ordinal='6' />
+            <column datatype='real' name='occupancy_pct' ordinal='7' />
+            <column datatype='real' name='vacancy_pct' ordinal='8' />
+            <column datatype='real' name='national_occupancy_pct' ordinal='9' />
+            <column datatype='real' name='occupancy_vs_national_pct_pts' ordinal='10' />
+          </columns>
+        </relation>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+      <column caption='Remoteness area' datatype='string' name='[remoteness]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[remoteness_sort]' role='dimension' type='quantitative' />
+      <column caption='People aged 65+ (thousands)' datatype='real' name='[population_65plus_000]' role='measure' type='quantitative' />
+      <column datatype='real' name='[share_of_places_pct]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[residential_places]' role='measure' type='quantitative' />
+      <column caption='Places per 1,000 aged 65+' datatype='real' name='[places_per_1000_aged_65plus]' role='measure' type='quantitative' />
+      <column caption='Occupancy (%)' datatype='real' name='[occupancy_pct]' role='measure' type='quantitative' />
+      <column datatype='real' name='[vacancy_pct]' role='measure' type='quantitative' />
+      <column caption='National occupancy (%)' datatype='real' name='[national_occupancy_pct]' role='measure' type='quantitative' />
+      <column datatype='real' name='[occupancy_vs_national_pct_pts]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/0remote00000000000000000.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/02/2026 06:00:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>remoteness</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[remoteness]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>remoteness</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>remoteness_sort</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[remoteness_sort]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>remoteness_sort</remote-alias>
+              <ordinal>2</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population_65plus_000</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[population_65plus_000]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>population_65plus_000</remote-alias>
+              <ordinal>3</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>share_of_places_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[share_of_places_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>share_of_places_pct</remote-alias>
+              <ordinal>4</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>residential_places</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[residential_places]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>residential_places</remote-alias>
+              <ordinal>5</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>places_per_1000_aged_65plus</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[places_per_1000_aged_65plus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>places_per_1000_aged_65plus</remote-alias>
+              <ordinal>6</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>occupancy_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[occupancy_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>occupancy_pct</remote-alias>
+              <ordinal>7</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vacancy_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[vacancy_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vacancy_pct</remote-alias>
+              <ordinal>8</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>national_occupancy_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[national_occupancy_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>national_occupancy_pct</remote-alias>
+              <ordinal>9</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>occupancy_vs_national_pct_pts</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[occupancy_vs_national_pct_pts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>occupancy_vs_national_pct_pts</remote-alias>
+              <ordinal>10</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='expenditure_waterfall' inline='true' name='federated.0wfall000000000000000000' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='expenditure_waterfall' name='textscan.0wfall000000000000000000'>
+            <connection class='textscan' directory='C:/Users/xpert/Vault_Monash/My Vault/FIT3179/DV1 Aged Care/Growing Old in Australia/data' filename='expenditure_waterfall.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0wfall000000000000000000' name='expenditure_waterfall.csv' table='[expenditure_waterfall#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='integer' name='step' ordinal='0' />
+            <column datatype='string' name='label' ordinal='1' />
+            <column datatype='string' name='type' ordinal='2' />
+            <column datatype='real' name='amount_m' ordinal='3' />
+            <column datatype='real' name='running_total_m' ordinal='4' />
+            <column datatype='real' name='closing_total_m' ordinal='5' />
+          </columns>
+        </relation>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[step]' role='dimension' type='quantitative' />
+      <column caption='Component' datatype='string' name='[label]' role='dimension' type='nominal' />
+      <column caption='Change' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Change ($m)' datatype='real' name='[amount_m]' role='measure' type='quantitative' />
+      <column caption='Running total ($m)' datatype='real' name='[running_total_m]' role='measure' type='quantitative' />
+      <column datatype='real' name='[closing_total_m]' role='measure' type='quantitative' />
+      <column caption='Waterfall size' datatype='real' name='[Calculation_wf_size]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='-[amount_m]' />
+      </column>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/0wfall000000000000000000.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/02/2026 06:00:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>step</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>step</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>label</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>2</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount_m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount_m]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount_m</remote-alias>
+              <ordinal>3</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>running_total_m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[running_total_m]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>running_total_m</remote-alias>
+              <ordinal>4</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>closing_total_m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[closing_total_m]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>closing_total_m</remote-alias>
+              <ordinal>5</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#52514e'>
+              <bucket>&quot;Total&quot;</bucket>
+            </map>
+            <map to='#2a78d6'>
+              <bucket>&quot;Increase&quot;</bucket>
+            </map>
+            <map to='#e34948'>
+              <bucket>&quot;Decrease&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='expenditure' inline='true' name='federated.0spend000000000000000000' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='expenditure' name='textscan.0spend000000000000000000'>
+            <connection class='textscan' directory='C:/Users/xpert/Vault_Monash/My Vault/FIT3179/DV1 Aged Care/Growing Old in Australia/data' filename='expenditure.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0spend000000000000000000' name='expenditure.csv' table='[expenditure#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='year' ordinal='0' />
+            <column datatype='string' name='programme' ordinal='1' />
+            <column datatype='real' name='real_expenditure_m' ordinal='2' />
+          </columns>
+        </relation>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+      <column caption='Programme' datatype='string' name='[programme]' role='dimension' type='nominal' />
+      <column caption='Spending ($m, real)' datatype='real' name='[real_expenditure_m]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/0spend000000000000000000.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/02/2026 06:00:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>programme</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[programme]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>programme</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>real_expenditure_m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[real_expenditure_m]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>real_expenditure_m</remote-alias>
+              <ordinal>2</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='state_year' inline='true' name='federated.0stateyr0000000000000000' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='state_year' name='textscan.0stateyr0000000000000000'>
+            <connection class='textscan' directory='C:/Users/xpert/Vault_Monash/My Vault/FIT3179/DV1 Aged Care/Growing Old in Australia/data' filename='state_year.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0stateyr0000000000000000' name='state_year.csv' table='[state_year#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='year' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='string' name='programme' ordinal='2' />
+            <column datatype='real' name='rate_per_1000' ordinal='3' />
+          </columns>
+        </relation>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' type='nominal' />
+      <column caption='Programme' datatype='string' name='[programme]' role='dimension' type='nominal' />
+      <column caption='Recipients per 1,000 aged 65+' datatype='real' name='[rate_per_1000]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/0stateyr0000000000000000.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/02/2026 06:00:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>programme</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[programme]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>programme</remote-alias>
+              <ordinal>2</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rate_per_1000</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rate_per_1000]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rate_per_1000</remote-alias>
+              <ordinal>3</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>283</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:programme:nk]' type='palette'>
+            <map to='#2a78d6'>
+              <bucket>&quot;Residential aged care&quot;</bucket>
+            </map>
+            <map to='#eb6834'>
+              <bucket>&quot;Home Care Packages&quot;</bucket>
+            </map>
+            <map to='#1baf7a'>
+              <bucket>&quot;Home support (CHSP)&quot;</bucket>
+            </map>
+            <map to='#eda100'>
+              <bucket>&quot;Residential respite&quot;</bucket>
+            </map>
+            <map to='#e87ba4'>
+              <bucket>&quot;Transition care&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='marimekko' inline='true' name='federated.0mekko000000000000000000' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='marimekko' name='textscan.0mekko000000000000000000'>
+            <connection class='textscan' directory='C:/Users/xpert/Vault_Monash/My Vault/FIT3179/DV1 Aged Care/Growing Old in Australia/data' filename='marimekko.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0mekko000000000000000000' name='marimekko.csv' table='[marimekko#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='state' ordinal='0' />
+            <column datatype='string' name='programme' ordinal='1' />
+            <column datatype='integer' name='point_id' ordinal='2' />
+            <column datatype='real' name='x' ordinal='3' />
+            <column datatype='real' name='y' ordinal='4' />
+            <column datatype='real' name='state_width_pct' ordinal='5' />
+            <column datatype='real' name='programme_share_pct' ordinal='6' />
+            <column datatype='real' name='population_65plus_000' ordinal='7' />
+            <column datatype='real' name='rate_per_1000' ordinal='8' />
+            <column datatype='string' name='year' ordinal='9' />
+            <column datatype='real' name='x_centre' ordinal='10' />
+          </columns>
+        </relation>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' type='nominal' />
+      <column caption='Programme' datatype='string' name='[programme]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[point_id]' role='dimension' type='quantitative' />
+      <column datatype='real' name='[x]' role='measure' type='quantitative' />
+      <column datatype='real' name='[y]' role='measure' type='quantitative' />
+      <column datatype='real' name='[state_width_pct]' role='measure' type='quantitative' />
+      <column caption='Share of care use (%)' datatype='real' name='[programme_share_pct]' role='measure' type='quantitative' />
+      <column caption='People aged 65+ (thousands)' datatype='real' name='[population_65plus_000]' role='measure' type='quantitative' />
+      <column caption='Recipients per 1,000 aged 65+' datatype='real' name='[rate_per_1000]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+      <column datatype='real' name='[x_centre]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/0mekko000000000000000000.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/02/2026 06:00:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>programme</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[programme]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>programme</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>point_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[point_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>point_id</remote-alias>
+              <ordinal>2</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>x</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>x</remote-alias>
+              <ordinal>3</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>y</remote-alias>
+              <ordinal>4</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state_width_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[state_width_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state_width_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>programme_share_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[programme_share_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>programme_share_pct</remote-alias>
+              <ordinal>6</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population_65plus_000</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[population_65plus_000]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>population_65plus_000</remote-alias>
+              <ordinal>7</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rate_per_1000</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rate_per_1000]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rate_per_1000</remote-alias>
+              <ordinal>8</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>9</ordinal>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>x_centre</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[x_centre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>x_centre</remote-alias>
+              <ordinal>10</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:programme:nk]' type='palette'>
+            <map to='#2a78d6'>
+              <bucket>&quot;Residential aged care&quot;</bucket>
+            </map>
+            <map to='#eb6834'>
+              <bucket>&quot;Home Care Packages&quot;</bucket>
+            </map>
+            <map to='#1baf7a'>
+              <bucket>&quot;Home support (CHSP)&quot;</bucket>
+            </map>
+            <map to='#eda100'>
+              <bucket>&quot;Residential respite&quot;</bucket>
+            </map>
+            <map to='#e87ba4'>
+              <bucket>&quot;Transition care&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight programme' name='[Action1_D8D99987101747EDA9851252444F1888]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='Growing Old in Australia' type='sheet'>
+        <exclude-sheet name='01 Older Australians' />
+        <exclude-sheet name='02 Population pyramid' />
+        <exclude-sheet name='05 Care use by age' />
+        <exclude-sheet name='06 Of every 100 aged 90+' />
+        <exclude-sheet name='07 Places by remoteness' />
+        <exclude-sheet name='08 Occupancy vs national' />
+        <exclude-sheet name='09 Where the extra billions went' />
+        <exclude-sheet name='10 What the money buys' />
+      </source>
+      <command command='tsc:brush'>
+        <param name='exclude' value='01 Older Australians,02 Population pyramid,05 Care use by age,06 Of every 100 aged 90+,07 Places by remoteness,08 Occupancy vs national,09 Where the extra billions went,10 What the money buys' />
+        <param name='field-captions' value='programme' />
+        <param name='target' value='Growing Old in Australia' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='01 Older Australians'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='13'>Older Australians, 1971 to 2045</run><run>Æ&#10;</run><run fontcolor='#52514e' fontname='Tableau Book' fontsize='10' italic='true'>Right of the line is projected. By 2045 the 85 and over group more than doubles.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pop_bands' name='federated.0popbands000000000000000' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0popbands000000000000000'>
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+            <column caption='Age group' datatype='string' name='[age_band]' role='dimension' type='nominal' />
+            <column caption='Band type' datatype='string' name='[band_type]' role='dimension' type='nominal' />
+            <column caption='People' datatype='real' name='[population]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[age_band]' derivation='None' name='[none:age_band:nk]' pivot='key' type='nominal' />
+            <column-instance column='[band_type]' derivation='None' name='[none:band_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0popbands000000000000000].[none:band_type:nk]'>
+            <groupfilter function='member' level='[none:band_type:nk]' member='&quot;Exclusive&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.0popbands000000000000000].[none:age_band:nk]' direction='ASC' using='[federated.0popbands000000000000000].[sum:population:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0popbands000000000000000].[none:age_band:nk]' type='palette'>
+              <map to='#9ec5f4'>
+                <bucket>&quot;65-74&quot;</bucket>
+              </map>
+              <map to='#3987e5'>
+                <bucket>&quot;75-84&quot;</bucket>
+              </map>
+              <map to='#184f95'>
+                <bucket>&quot;85 and over&quot;</bucket>
+              </map>
+            </encoding>
+          </style-rule>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0popbands000000000000000].[none:year:qk]' field-type='quantitative' max='2046' min='1970' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0popbands000000000000000].[none:year:qk]' scope='cols' value='Year (30 June)' />
+            <format attr='title' class='0' field='[federated.0popbands000000000000000].[sum:population:qk]' scope='rows' value='People aged 65 and over' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0popbands000000000000000].[none:age_band:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0popbands000000000000000].[none:year:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='none' scope='per-pane' value='2025' value-column='[federated.0popbands000000000000000].[none:year:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0popbands000000000000000].[none:year:qk]>]]></run>
+                <run>: </run>
+                <run bold='true'><![CDATA[<[federated.0popbands000000000000000].[sum:population:qk]>]]></run>
+                <run> Australians aged </run>
+                <run bold='true'><![CDATA[<[federated.0popbands000000000000000].[none:age_band:nk]>]]></run>
+                <run>.</run>
+                <run>Æ&#10;</run>
+                <run>Right of the line: ABS Series B projection.</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0popbands000000000000000].[sum:population:qk]</rows>
+        <cols>[federated.0popbands000000000000000].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{021AFB11-9BC2-47E9-856A-85CCC31DF02E}' />
+    </worksheet>
+    <worksheet name='02 Population pyramid'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='13'>Population pyramid, 2025 and 2045</run><run>Æ&#10;</run><run fontcolor='#52514e' fontname='Tableau Book' fontsize='10' italic='true'>The top thickens. Women outnumber men three to two above 85.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pop_pyramid' name='federated.0pyramid0000000000000000' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pyramid0000000000000000'>
+            <column caption='Year' datatype='string' name='[series]' role='dimension' type='nominal' />
+            <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+            <column caption='Age group' datatype='string' name='[age_band]' role='dimension' type='nominal' />
+            <column caption='People' datatype='integer' name='[signed_population]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[band_sort]' role='dimension' type='quantitative' />
+            <column caption='People' datatype='integer' name='[value]' role='measure' type='quantitative' />
+            <column-instance column='[series]' derivation='None' name='[none:series:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sex]' derivation='None' name='[none:sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[age_band]' derivation='None' name='[none:age_band:nk]' pivot='key' type='nominal' />
+            <column-instance column='[signed_population]' derivation='Sum' name='[sum:signed_population:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[band_sort]' derivation='Sum' name='[sum:band_sort:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.0pyramid0000000000000000].[none:age_band:nk]' direction='DESC' using='[federated.0pyramid0000000000000000].[sum:band_sort:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0pyramid0000000000000000].[none:sex:nk]' type='palette'>
+              <map to='#4a6b8a'>
+                <bucket>&quot;Male&quot;</bucket>
+              </map>
+              <map to='#8c5f7d'>
+                <bucket>&quot;Female&quot;</bucket>
+              </map>
+            </encoding>
+          </style-rule>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0pyramid0000000000000000].[sum:signed_population:qk]' scope='cols' value='People (men left, women right)' />
+            <format attr='text-format' field='[federated.0pyramid0000000000000000].[sum:signed_population:qk]' value='n#,##0;#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0pyramid0000000000000000].[none:sex:nk]' />
+              <tooltip column='[federated.0pyramid0000000000000000].[sum:value:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0pyramid0000000000000000].[sum:value:qk]>]]></run>
+                <run> </run>
+                <run bold='true'><![CDATA[<[federated.0pyramid0000000000000000].[none:sex:nk]>]]></run>
+                <run> Australians aged </run>
+                <run bold='true'><![CDATA[<[federated.0pyramid0000000000000000].[none:age_band:nk]>]]></run>
+                <run>, </run>
+                <run bold='true'><![CDATA[<[federated.0pyramid0000000000000000].[none:series:nk]>]]></run>
+                <run>.</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0pyramid0000000000000000].[none:age_band:nk]</rows>
+        <cols>([federated.0pyramid0000000000000000].[none:series:nk] / [federated.0pyramid0000000000000000].[sum:signed_population:qk])</cols>
+      </table>
+      <simple-id uuid='{90571679-3E89-48F6-9EAC-B22B5CA0F01D}' />
+    </worksheet>
+    <worksheet name='03 Where people are cared for'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='13'>Where older Australians are cared for, 2017-18 to 2024-25</run><run>Æ&#10;</run><run fontcolor='#52514e' fontname='Tableau Book' fontsize='10' italic='true'>2021-22: Home Care Packages overtook permanent residential care.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='care_rate_program_year' name='federated.0progyear000000000000000' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0progyear000000000000000'>
+            <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+            <column caption='Programme' datatype='string' name='[programme]' role='dimension' type='nominal' />
+            <column caption='Recipients per 1,000 aged 65+' datatype='real' name='[rate_per_1000]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[programme]' derivation='None' name='[none:programme:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rate_per_1000]' derivation='Sum' name='[sum:rate_per_1000:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0progyear000000000000000].[none:programme:nk]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[none:programme:nk]' member='&quot;Residential aged care&quot;' />
+              <groupfilter function='member' level='[none:programme:nk]' member='&quot;Home Care Packages&quot;' />
+              <groupfilter function='member' level='[none:programme:nk]' member='&quot;Home support (CHSP)&quot;' />
+            </groupfilter>
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0progyear000000000000000].[none:programme:nk]' type='palette'>
+              <map to='#2a78d6'>
+                <bucket>&quot;Residential aged care&quot;</bucket>
+              </map>
+              <map to='#eb6834'>
+                <bucket>&quot;Home Care Packages&quot;</bucket>
+              </map>
+              <map to='#1baf7a'>
+                <bucket>&quot;Home support (CHSP)&quot;</bucket>
+              </map>
+              <map to='#eda100'>
+                <bucket>&quot;Residential respite&quot;</bucket>
+              </map>
+              <map to='#e87ba4'>
+                <bucket>&quot;Transition care&quot;</bucket>
+              </map>
+            </encoding>
+          </style-rule>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0progyear000000000000000].[sum:rate_per_1000:qk]' scope='rows' value='Recipients per 1,000 people aged 65+' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0progyear000000000000000].[none:programme:nk]' />
+              <text column='[federated.0progyear000000000000000].[none:programme:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>In </run>
+                <run bold='true'><![CDATA[<[federated.0progyear000000000000000].[none:year:nk]>]]></run>
+                <run>, </run>
+                <run bold='true'><![CDATA[<[federated.0progyear000000000000000].[sum:rate_per_1000:qk]>]]></run>
+                <run> of every 1,000 older Australians used </run>
+                <run bold='true'><![CDATA[<[federated.0progyear000000000000000].[none:programme:nk]>]]></run>
+                <run>.</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='size' value='1.5' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0progyear000000000000000].[sum:rate_per_1000:qk]</rows>
+        <cols>[federated.0progyear000000000000000].[none:year:nk]</cols>
+      </table>
+      <simple-id uuid='{59A5C552-D194-4E60-BA9B-32A859959213}' />
+    </worksheet>
+    <worksheet name='04 Seven years of change'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='13'>Seven years of change, 2017-18 to 2024-25</run><run>Æ&#10;</run><run fontcolor='#52514e' fontname='Tableau Book' fontsize='10' italic='true'>Home Care Packages +147%. Home support -13%. Residential care -11%.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='care_rate_program_year' name='federated.0progyear000000000000000' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0progyear000000000000000'>
+            <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+            <column caption='Programme' datatype='string' name='[programme]' role='dimension' type='nominal' />
+            <column caption='Recipients per 1,000 aged 65+' datatype='real' name='[rate_per_1000]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[programme]' derivation='None' name='[none:programme:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rate_per_1000]' derivation='Sum' name='[sum:rate_per_1000:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0progyear000000000000000].[none:year:nk]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[none:year:nk]' member='&quot;2017-18&quot;' />
+              <groupfilter function='member' level='[none:year:nk]' member='&quot;2024-25&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0progyear000000000000000].[none:programme:nk]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[none:programme:nk]' member='&quot;Residential aged care&quot;' />
+              <groupfilter function='member' level='[none:programme:nk]' member='&quot;Home Care Packages&quot;' />
+              <groupfilter function='member' level='[none:programme:nk]' member='&quot;Home support (CHSP)&quot;' />
+            </groupfilter>
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0progyear000000000000000].[none:programme:nk]' type='palette'>
+              <map to='#2a78d6'>
+                <bucket>&quot;Residential aged care&quot;</bucket>
+              </map>
+              <map to='#eb6834'>
+                <bucket>&quot;Home Care Packages&quot;</bucket>
+              </map>
+              <map to='#1baf7a'>
+                <bucket>&quot;Home support (CHSP)&quot;</bucket>
+              </map>
+              <map to='#eda100'>
+                <bucket>&quot;Residential respite&quot;</bucket>
+              </map>
+              <map to='#e87ba4'>
+                <bucket>&quot;Transition care&quot;</bucket>
+              </map>
+            </encoding>
+          </style-rule>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0progyear000000000000000].[sum:rate_per_1000:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0progyear000000000000000].[sum:rate_per_1000:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0progyear000000000000000].[sum:rate_per_1000:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0progyear000000000000000].[none:programme:nk]' />
+              <text column='[federated.0progyear000000000000000].[none:programme:nk]' />
+              <text column='[federated.0progyear000000000000000].[sum:rate_per_1000:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0progyear000000000000000].[none:programme:nk]>]]></run>
+                <run> in </run>
+                <run bold='true'><![CDATA[<[federated.0progyear000000000000000].[none:year:nk]>]]></run>
+                <run>: </run>
+                <run bold='true'><![CDATA[<[federated.0progyear000000000000000].[sum:rate_per_1000:qk]>]]></run>
+                <run> recipients per 1,000 people aged 65 and over.</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='size' value='1.6' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0progyear000000000000000].[sum:rate_per_1000:qk]</rows>
+        <cols>[federated.0progyear000000000000000].[none:year:nk]</cols>
+      </table>
+      <simple-id uuid='{D8C41C9B-5A9E-4039-853B-3A85E43F3F7E}' />
+    </worksheet>
+    <worksheet name='05 Care use by age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='13'>Care use by age and programme, 2024-25</run><run>Æ&#10;</run><run fontcolor='#52514e' fontname='Tableau Book' fontsize='10' italic='true'>People per 1,000 in each age group. Residential care: 4 at 65 to 69, 414 at 90 and over.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='care_rate_age_program' name='federated.0ageprog0000000000000000' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ageprog0000000000000000'>
+            <column caption='Age group' datatype='string' name='[age_band]' role='dimension' type='nominal' />
+            <column caption='Programme' datatype='string' name='[programme]' role='dimension' type='nominal' />
+            <column caption='Recipients per 1,000 aged 65+' datatype='real' name='[rate_per_1000]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[band_sort]' role='dimension' type='quantitative' />
+            <column-instance column='[age_band]' derivation='None' name='[none:age_band:nk]' pivot='key' type='nominal' />
+            <column-instance column='[programme]' derivation='None' name='[none:programme:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rate_per_1000]' derivation='Sum' name='[sum:rate_per_1000:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[band_sort]' derivation='Sum' name='[sum:band_sort:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.0ageprog0000000000000000].[none:age_band:nk]' direction='ASC' using='[federated.0ageprog0000000000000000].[sum:band_sort:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ageprog0000000000000000].[sum:rate_per_1000:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ageprog0000000000000000].[sum:rate_per_1000:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0ageprog0000000000000000].[sum:rate_per_1000:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0ageprog0000000000000000].[sum:rate_per_1000:qk]' />
+              <text column='[federated.0ageprog0000000000000000].[sum:rate_per_1000:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>Of every 1,000 Australians aged </run>
+                <run bold='true'><![CDATA[<[federated.0ageprog0000000000000000].[none:age_band:nk]>]]></run>
+                <run>, </run>
+                <run bold='true'><![CDATA[<[federated.0ageprog0000000000000000].[sum:rate_per_1000:qk]>]]></run>
+                <run> used </run>
+                <run bold='true'><![CDATA[<[federated.0ageprog0000000000000000].[none:programme:nk]>]]></run>
+                <run> during 2024-25.</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ageprog0000000000000000].[none:age_band:nk]</rows>
+        <cols>[federated.0ageprog0000000000000000].[none:programme:nk]</cols>
+      </table>
+      <simple-id uuid='{D73BEA79-40E7-4BBA-9704-D5AF1AF0E490}' />
+    </worksheet>
+    <worksheet name='06 Of every 100 aged 90+'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='13'>Of every 100 Australians aged 90 and over, 2024-25</run><run>Æ&#10;</run><run fontcolor='#52514e' fontname='Tableau Book' fontsize='10' italic='true'>41 spent time in permanent residential aged care. The other 59 did not.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='waffle' name='federated.0waffle00000000000000000' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0waffle00000000000000000'>
+            <column datatype='integer' name='[row]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[col]' role='dimension' type='quantitative' />
+            <column caption='Group' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[cell]' role='dimension' type='quantitative' />
+            <column-instance column='[row]' derivation='None' name='[none:row:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[col]' derivation='None' name='[none:col:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[cell]' derivation='Sum' name='[sum:cell:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0waffle00000000000000000].[none:category:nk]' type='palette'>
+              <map to='#2a78d6'>
+                <bucket>&quot;In permanent residential aged care&quot;</bucket>
+              </map>
+              <map to='#e1e0d9'>
+                <bucket>&quot;Not in residential aged care&quot;</bucket>
+              </map>
+            </encoding>
+          </style-rule>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0waffle00000000000000000].[none:row:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0waffle00000000000000000].[none:col:qk]' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0waffle00000000000000000].[none:category:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>Each square is one person in 100 aged 90 and over.</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0waffle00000000000000000].[none:category:nk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+                <format attr='size' value='1.0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0waffle00000000000000000].[none:row:qk]</rows>
+        <cols>[federated.0waffle00000000000000000].[none:col:qk]</cols>
+      </table>
+      <simple-id uuid='{85F47A40-DD55-4EF5-A99C-7C2201560AFD}' />
+    </worksheet>
+    <worksheet name='07 Places by remoteness'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='13'>Residential places per 1,000 people aged 65 and over, by remoteness, 2025</run><run>Æ&#10;</run><run fontcolor='#52514e' fontname='Tableau Book' fontsize='10' italic='true'>48 places per 1,000 in the major cities. 10.5 in very remote Australia.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='remoteness' name='federated.0remote00000000000000000' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0remote00000000000000000'>
+            <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+            <column caption='Remoteness area' datatype='string' name='[remoteness]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[remoteness_sort]' role='dimension' type='quantitative' />
+            <column caption='Places per 1,000 aged 65+' datatype='real' name='[places_per_1000_aged_65plus]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[remoteness]' derivation='None' name='[none:remoteness:nk]' pivot='key' type='nominal' />
+            <column-instance column='[remoteness_sort]' derivation='Sum' name='[sum:remoteness_sort:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[places_per_1000_aged_65plus]' derivation='Sum' name='[sum:places_per_1000_aged_65plus:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0remote00000000000000000].[none:year:nk]'>
+            <groupfilter function='member' level='[none:year:nk]' member='&quot;2025&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.0remote00000000000000000].[none:remoteness:nk]' direction='ASC' using='[federated.0remote00000000000000000].[sum:remoteness_sort:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0remote00000000000000000].[sum:places_per_1000_aged_65plus:qk]' scope='cols' value='Residential places per 1,000 people aged 65 and over' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0remote00000000000000000].[sum:places_per_1000_aged_65plus:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0remote00000000000000000].[sum:places_per_1000_aged_65plus:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.0remote00000000000000000].[sum:places_per_1000_aged_65plus:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0remote00000000000000000].[none:remoteness:nk]>]]></run>
+                <run>: </run>
+                <run bold='true'><![CDATA[<[federated.0remote00000000000000000].[sum:places_per_1000_aged_65plus:qk]>]]></run>
+                <run> residential aged care places for every 1,000 residents aged 65 and over, 30 June 2025.</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#2a78d6' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0remote00000000000000000].[none:remoteness:nk]</rows>
+        <cols>[federated.0remote00000000000000000].[sum:places_per_1000_aged_65plus:qk]</cols>
+      </table>
+      <simple-id uuid='{DE8BE75E-4723-4EC9-B58C-97576398290C}' />
+    </worksheet>
+    <worksheet name='08 Occupancy vs national'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='13'>Occupancy of residential places against the national rate, 2025</run><run>Æ&#10;</run><run fontcolor='#52514e' fontname='Tableau Book' fontsize='10' italic='true'>Very remote areas sit 13.7 points below the national 90.0%. Axis starts at 60%.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='remoteness' name='federated.0remote00000000000000000' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0remote00000000000000000'>
+            <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+            <column caption='Remoteness area' datatype='string' name='[remoteness]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[remoteness_sort]' role='dimension' type='quantitative' />
+            <column caption='Occupancy (%)' datatype='real' name='[occupancy_pct]' role='measure' type='quantitative' />
+            <column caption='National occupancy (%)' datatype='real' name='[national_occupancy_pct]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[remoteness]' derivation='None' name='[none:remoteness:nk]' pivot='key' type='nominal' />
+            <column-instance column='[remoteness_sort]' derivation='Sum' name='[sum:remoteness_sort:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[occupancy_pct]' derivation='Sum' name='[sum:occupancy_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[national_occupancy_pct]' derivation='Sum' name='[sum:national_occupancy_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0remote00000000000000000].[none:year:nk]'>
+            <groupfilter function='member' level='[none:year:nk]' member='&quot;2025&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <sort class='computed' column='[federated.0remote00000000000000000].[none:remoteness:nk]' direction='ASC' using='[federated.0remote00000000000000000].[sum:remoteness_sort:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0remote00000000000000000].[sum:occupancy_pct:qk]' field-type='quantitative' max='100' min='60' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0remote00000000000000000].[sum:occupancy_pct:qk]' scope='cols' value='Occupied places (%)  -  axis starts at 60%' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0remote00000000000000000].[sum:occupancy_pct:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0remote00000000000000000].[sum:occupancy_pct:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.0remote00000000000000000].[sum:occupancy_pct:qk]' />
+              <lod column='[federated.0remote00000000000000000].[sum:national_occupancy_pct:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0remote00000000000000000].[sum:occupancy_pct:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='value' scope='per-pane' value-column='[federated.0remote00000000000000000].[sum:national_occupancy_pct:qk]' z-order='1' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0remote00000000000000000].[none:remoteness:nk]>]]></run>
+                <run>: </run>
+                <run bold='true'><![CDATA[<[federated.0remote00000000000000000].[sum:occupancy_pct:qk]>]]></run>
+                <run>% of residential places were occupied at 30 June 2025.</run>
+                <run>Æ&#10;</run>
+                <run>National rate: </run>
+                <run bold='true'><![CDATA[<[federated.0remote00000000000000000].[sum:national_occupancy_pct:qk]>]]></run>
+                <run>% (weighted by places).</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#2a78d6' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0remote00000000000000000].[none:remoteness:nk]</rows>
+        <cols>[federated.0remote00000000000000000].[sum:occupancy_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{F5A8AEF3-26C1-438A-84C5-4F7AC652591B}' />
+    </worksheet>
+    <worksheet name='09 Where the extra billions went'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='13'>Where the extra $19.5 billion went, 2014-15 to 2024-25 (real dollars)</run><run>Æ&#10;</run><run fontcolor='#52514e' fontname='Tableau Book' fontsize='10' italic='true'>Residential care added $10.9bn, home care $7.7bn. Total reaches $39.8bn.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='expenditure_waterfall' name='federated.0wfall000000000000000000' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wfall000000000000000000'>
+            <column caption='Component' datatype='string' name='[label]' role='dimension' type='nominal' />
+            <column caption='Change' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[step]' role='dimension' type='quantitative' />
+            <column caption='Running total ($m)' datatype='real' name='[running_total_m]' role='measure' type='quantitative' />
+            <column caption='Change ($m)' datatype='real' name='[amount_m]' role='measure' type='quantitative' />
+            <column caption='Waterfall size' datatype='real' name='[Calculation_wf_size]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='-[amount_m]' />
+            </column>
+            <column-instance column='[label]' derivation='None' name='[none:label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[step]' derivation='Sum' name='[sum:step:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[running_total_m]' derivation='Sum' name='[sum:running_total_m:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[amount_m]' derivation='Sum' name='[sum:amount_m:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_wf_size]' derivation='Sum' name='[sum:Calculation_wf_size:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.0wfall000000000000000000].[none:label:nk]' direction='ASC' using='[federated.0wfall000000000000000000].[sum:step:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0wfall000000000000000000].[none:type:nk]' type='palette'>
+              <map to='#52514e'>
+                <bucket>&quot;Total&quot;</bucket>
+              </map>
+              <map to='#2a78d6'>
+                <bucket>&quot;Increase&quot;</bucket>
+              </map>
+              <map to='#e34948'>
+                <bucket>&quot;Decrease&quot;</bucket>
+              </map>
+            </encoding>
+          </style-rule>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0wfall000000000000000000].[sum:running_total_m:qk]' field-type='quantitative' max='42000' min='0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0wfall000000000000000000].[sum:running_total_m:qk]' scope='rows' value='Government spending ($ million, 2024-25 dollars)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0wfall000000000000000000].[sum:amount_m:qk]' value='n&quot;$&quot;#,##0&quot;m&quot;;-&quot;$&quot;#,##0&quot;m&quot;' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0wfall000000000000000000].[sum:amount_m:qk]' value='n&quot;$&quot;#,##0&quot;m&quot;;-&quot;$&quot;#,##0&quot;m&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <encodings>
+              <color column='[federated.0wfall000000000000000000].[none:type:nk]' />
+              <size column='[federated.0wfall000000000000000000].[sum:Calculation_wf_size:qk]' />
+              <text column='[federated.0wfall000000000000000000].[sum:amount_m:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0wfall000000000000000000].[none:label:nk]>]]></run>
+                <run>: </run>
+                <run bold='true'><![CDATA[<[federated.0wfall000000000000000000].[sum:amount_m:qk]>]]></run>
+                <run> million.</run>
+                <run>Æ&#10;</run>
+                <run>Running total: </run>
+                <run bold='true'><![CDATA[<[federated.0wfall000000000000000000].[sum:running_total_m:qk]>]]></run>
+                <run> million.</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0wfall000000000000000000].[sum:running_total_m:qk]</rows>
+        <cols>[federated.0wfall000000000000000000].[none:label:nk]</cols>
+      </table>
+      <simple-id uuid='{0CE0991B-A3EE-43C4-AB54-273C21059320}' />
+    </worksheet>
+    <worksheet name='10 What the money buys'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='13'>What the money buys, 2024-25</run><run>Æ&#10;</run><run fontcolor='#52514e' fontname='Tableau Book' fontsize='10' italic='true'>Residential care takes 64 cents in every dollar. Home care takes 32.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='expenditure' name='federated.0spend000000000000000000' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0spend000000000000000000'>
+            <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+            <column caption='Programme' datatype='string' name='[programme]' role='dimension' type='nominal' />
+            <column caption='Spending ($m, real)' datatype='real' name='[real_expenditure_m]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[programme]' derivation='None' name='[none:programme:nk]' pivot='key' type='nominal' />
+            <column-instance column='[real_expenditure_m]' derivation='Sum' name='[sum:real_expenditure_m:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0spend000000000000000000].[none:year:nk]'>
+            <groupfilter function='member' level='[none:year:nk]' member='&quot;2024-25&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0spend000000000000000000].[sum:real_expenditure_m:qk]' value='n&quot;$&quot;#,##0&quot;m&quot;;-&quot;$&quot;#,##0&quot;m&quot;' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0spend000000000000000000].[sum:real_expenditure_m:qk]' value='n&quot;$&quot;#,##0&quot;m&quot;;-&quot;$&quot;#,##0&quot;m&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <size column='[federated.0spend000000000000000000].[sum:real_expenditure_m:qk]' />
+              <text column='[federated.0spend000000000000000000].[none:programme:nk]' />
+              <text column='[federated.0spend000000000000000000].[sum:real_expenditure_m:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0spend000000000000000000].[none:programme:nk]>]]></run>
+                <run>: </run>
+                <run bold='true'><![CDATA[<[federated.0spend000000000000000000].[sum:real_expenditure_m:qk]>]]></run>
+                <run> million of government spending in 2024-25.</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#2a78d6' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+      </table>
+      <simple-id uuid='{BDF87A1D-ABD8-4007-99DF-51750D6282F2}' />
+    </worksheet>
+    <worksheet name='11 Two programmes by state'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='13'>Two programmes, eight jurisdictions, 2024-25</run><run>Æ&#10;</run><run fontcolor='#52514e' fontname='Tableau Book' fontsize='10' italic='true'>South Australia leads on both. The Northern Territory: 18.8 per 1,000 in residential care.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='state_year' name='federated.0stateyr0000000000000000' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0stateyr0000000000000000'>
+            <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' type='nominal' />
+            <column caption='Programme' datatype='string' name='[programme]' role='dimension' type='nominal' />
+            <column caption='Recipients per 1,000 aged 65+' datatype='real' name='[rate_per_1000]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[programme]' derivation='None' name='[none:programme:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rate_per_1000]' derivation='Sum' name='[sum:rate_per_1000:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0stateyr0000000000000000].[none:year:nk]'>
+            <groupfilter function='member' level='[none:year:nk]' member='&quot;2024-25&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0stateyr0000000000000000].[none:state:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:state:nk]' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Aust&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0stateyr0000000000000000].[none:programme:nk]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[none:programme:nk]' member='&quot;Residential aged care&quot;' />
+              <groupfilter function='member' level='[none:programme:nk]' member='&quot;Home Care Packages&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='computed' column='[federated.0stateyr0000000000000000].[none:state:nk]' direction='DESC' using='[federated.0stateyr0000000000000000].[sum:rate_per_1000:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0stateyr0000000000000000].[none:programme:nk]' type='palette'>
+              <map to='#2a78d6'>
+                <bucket>&quot;Residential aged care&quot;</bucket>
+              </map>
+              <map to='#eb6834'>
+                <bucket>&quot;Home Care Packages&quot;</bucket>
+              </map>
+              <map to='#1baf7a'>
+                <bucket>&quot;Home support (CHSP)&quot;</bucket>
+              </map>
+              <map to='#eda100'>
+                <bucket>&quot;Residential respite&quot;</bucket>
+              </map>
+              <map to='#e87ba4'>
+                <bucket>&quot;Transition care&quot;</bucket>
+              </map>
+            </encoding>
+          </style-rule>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0stateyr0000000000000000].[sum:rate_per_1000:qk]' scope='rows' value='Recipients per 1,000 people aged 65+' />
+            <format attr='display' field='[federated.0stateyr0000000000000000].[none:programme:nk]' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0stateyr0000000000000000].[sum:rate_per_1000:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0stateyr0000000000000000].[sum:rate_per_1000:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0stateyr0000000000000000].[none:programme:nk]' />
+              <text column='[federated.0stateyr0000000000000000].[sum:rate_per_1000:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>In 2024-25, </run>
+                <run bold='true'><![CDATA[<[federated.0stateyr0000000000000000].[sum:rate_per_1000:qk]>]]></run>
+                <run> of every 1,000 people aged 65 and over in </run>
+                <run bold='true'><![CDATA[<[federated.0stateyr0000000000000000].[none:state:nk]>]]></run>
+                <run> used </run>
+                <run bold='true'><![CDATA[<[federated.0stateyr0000000000000000].[none:programme:nk]>]]></run>
+                <run>.</run>
+                <run>Æ&#10;</run>
+                <run>Australia: 51.5 residential, 69.8 home care.</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0stateyr0000000000000000].[sum:rate_per_1000:qk]</rows>
+        <cols>([federated.0stateyr0000000000000000].[none:state:nk] / [federated.0stateyr0000000000000000].[none:programme:nk])</cols>
+      </table>
+      <simple-id uuid='{DD017476-9AF3-4AD5-9CC8-0E7E060E9C5F}' />
+    </worksheet>
+    <worksheet name='12 Care mix by population'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='13'>Care mix by state, sized by older population, 2024-25</run><run>Æ&#10;</run><run fontcolor='#52514e' fontname='Tableau Book' fontsize='10' italic='true'>Column width is each state&apos;s share of older Australians. Shares are of care use, not people.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='marimekko' name='federated.0mekko000000000000000000' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mekko000000000000000000'>
+            <column datatype='real' name='[x]' role='measure' type='quantitative' />
+            <column datatype='real' name='[y]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[point_id]' role='dimension' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' type='nominal' />
+            <column caption='Programme' datatype='string' name='[programme]' role='dimension' type='nominal' />
+            <column caption='Share of care use (%)' datatype='real' name='[programme_share_pct]' role='measure' type='quantitative' />
+            <column caption='People aged 65+ (thousands)' datatype='real' name='[population_65plus_000]' role='measure' type='quantitative' />
+            <column caption='Recipients per 1,000 aged 65+' datatype='real' name='[rate_per_1000]' role='measure' type='quantitative' />
+            <column-instance column='[x]' derivation='Avg' name='[avg:x:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y]' derivation='Avg' name='[avg:y:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[point_id]' derivation='None' name='[none:point_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[programme]' derivation='None' name='[none:programme:nk]' pivot='key' type='nominal' />
+            <column-instance column='[programme_share_pct]' derivation='Avg' name='[avg:programme_share_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[population_65plus_000]' derivation='Avg' name='[avg:population_65plus_000:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[rate_per_1000]' derivation='Avg' name='[avg:rate_per_1000:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0mekko000000000000000000].[none:programme:nk]' type='palette'>
+              <map to='#2a78d6'>
+                <bucket>&quot;Residential aged care&quot;</bucket>
+              </map>
+              <map to='#eb6834'>
+                <bucket>&quot;Home Care Packages&quot;</bucket>
+              </map>
+              <map to='#1baf7a'>
+                <bucket>&quot;Home support (CHSP)&quot;</bucket>
+              </map>
+              <map to='#eda100'>
+                <bucket>&quot;Residential respite&quot;</bucket>
+              </map>
+              <map to='#e87ba4'>
+                <bucket>&quot;Transition care&quot;</bucket>
+              </map>
+            </encoding>
+          </style-rule>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0mekko000000000000000000].[avg:x:qk]' field-type='quantitative' max='100' min='0' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0mekko000000000000000000].[avg:x:qk]' scope='cols' value='Share of Australia&apos;s population aged 65+ (%), left to right: NSW, Vic, Qld, WA, SA, Tas, ACT, NT' />
+            <encoding attr='space' class='0' field='[federated.0mekko000000000000000000].[avg:y:qk]' field-type='quantitative' max='100' min='0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0mekko000000000000000000].[avg:y:qk]' scope='rows' value='Share of aged care use (%)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+            <encodings>
+              <path column='[federated.0mekko000000000000000000].[none:point_id:qk]' />
+              <color column='[federated.0mekko000000000000000000].[none:programme:nk]' />
+              <lod column='[federated.0mekko000000000000000000].[none:state:nk]' />
+              <tooltip column='[federated.0mekko000000000000000000].[avg:programme_share_pct:qk]' />
+              <tooltip column='[federated.0mekko000000000000000000].[avg:population_65plus_000:qk]' />
+              <tooltip column='[federated.0mekko000000000000000000].[avg:rate_per_1000:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.0mekko000000000000000000].[none:state:nk]>]]></run>
+                <run> - </run>
+                <run bold='true'><![CDATA[<[federated.0mekko000000000000000000].[none:programme:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0mekko000000000000000000].[avg:programme_share_pct:qk]>]]></run>
+                <run>% of the state&apos;s aged care use (</run>
+                <run bold='true'><![CDATA[<[federated.0mekko000000000000000000].[avg:rate_per_1000:qk]>]]></run>
+                <run> per 1,000).</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0mekko000000000000000000].[avg:population_65plus_000:qk]>]]></run>
+                <run> thousand residents aged 65 and over.</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mekko000000000000000000].[avg:y:qk]</rows>
+        <cols>[federated.0mekko000000000000000000].[avg:x:qk]</cols>
+      </table>
+      <simple-id uuid='{4AF2676F-DFB9-4A2B-88FE-A1D942BAAFA2}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Growing Old in Australia'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size maxheight='5400' maxwidth='1200' minheight='5400' minwidth='1200' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='1' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='2' param='vert' type-v2='layout-flow' w='100000' x='0' y='0' />
+        </zone>
+        <zone forceUpdate='true' h='3611' w='95000' x='2500' y='444' id='11' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Book' fontsize='8' fontcolor='#898781'>FIT3179 DATA VISUALISATION 1  ·  AGED CARE IN AUSTRALIA</run>
+            <run>Æ&#10;</run>
+            <run fontname='Georgia' fontsize='34' fontcolor='#0b0b0b' bold='true'>Growing Old in Australia</run>
+            <run>Æ&#10;</run>
+            <run fontname='Georgia' fontsize='19' fontcolor='#52514e' italic='true'>How a nation prepares to age</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='9' fontcolor='#898781'>Ian Leong  ·  34423680  ·  September 2026</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='6111' w='57500' x='2500' y='4241' id='12' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Book' fontsize='11' fontcolor='#52514e'>Australia is getting older, and it is getting older fastest at the very top. In 1971, one Australian in twelve had passed 65. Today it is more than one in six, and by 2045 it will be better than one in five, while the number of people aged 85 and over, the group that relies on aged care most heavily, will have more than doubled.</run>
+            <run>Æ&#10;</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='11' fontcolor='#52514e'>This page follows what that means for aged care: who uses it, how the balance between a nursing home and care at home has shifted, where access is thinnest, and what it all costs.</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='6111' w='35000' x='62500' y='4241' id='13' type-v2='text'>
+          <formatted-text>
+            <run fontname='Georgia' fontsize='22' fontcolor='#2a78d6' bold='true'>1 in 5.7</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='10' fontcolor='#52514e'>Australians aged 65 or over in 2025. In 1971 it was 1 in 12.</run>
+            <run>Æ&#10;</run>
+            <run>Æ&#10;</run>
+            <run fontname='Georgia' fontsize='22' fontcolor='#2a78d6' bold='true'>1.39 million</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='10' fontcolor='#52514e'>Australians expected to be 85 or over in 2045, up from 603,000 today.</run>
+            <run>Æ&#10;</run>
+            <run>Æ&#10;</run>
+            <run fontname='Georgia' fontsize='22' fontcolor='#2a78d6' bold='true'>$39.8 billion</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='10' fontcolor='#52514e'>Government spending on aged care in 2024-25, almost double a decade earlier after inflation.</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='741' w='95000' x='2500' y='10722' id='14' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Medium' fontsize='12' fontcolor='#2a78d6'>02  </run>
+            <run fontname='Georgia' fontsize='19' fontcolor='#0b0b0b' bold='true'>An ageing nation</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='2444' w='95000' x='2500' y='11574' id='15' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Book' fontsize='10' fontcolor='#52514e'>Australia&apos;s older population has grown steadily for fifty years, but the age groups inside it have not grown at the same pace. Between 2025 and 2045 the number of people aged 65 to 74 grows by about a quarter, while the number aged 85 and over more than doubles. That gap matters, because the need for aged care rises steeply with age: demand is driven by the smallest and fastest-growing group, not by the headline number of older Australians.</run>
+          </formatted-text>
+        </zone>
+        <zone h='8333' w='35750' x='2500' y='14204' id='16' name='01 Older Australians' />
+        <zone h='2778' w='9833' x='38917' y='15500' id='17' name='01 Older Australians' pane-specification-id='0' param='[federated.0popbands000000000000000].[none:age_band:nk]' type-v2='color' />
+        <zone h='8333' w='35750' x='51250' y='14204' id='18' name='02 Population pyramid' />
+        <zone h='2778' w='9833' x='87667' y='15500' id='19' name='02 Population pyramid' pane-specification-id='0' param='[federated.0pyramid0000000000000000].[none:sex:nk]' type-v2='color' />
+        <zone forceUpdate='true' h='741' w='95000' x='2500' y='23278' id='20' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Medium' fontsize='12' fontcolor='#2a78d6'>03  </run>
+            <run fontname='Georgia' fontsize='19' fontcolor='#0b0b0b' bold='true'>Where people are cared for</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='2944' w='95000' x='2500' y='24130' id='21' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Book' fontsize='10' fontcolor='#52514e'>A decade ago, an older Australian was roughly twice as likely to be living in permanent residential care as to be receiving a Home Care Package at home. That is no longer true. Home Care Packages rose from 28 recipients for every 1,000 older Australians in 2017-18 to 70 in 2024-25, while permanent residential care fell from 58 to 51. The lines crossed in 2021-22. Home support remains the most common help of all, but it too is declining. The lines are not stacked because a person can use more than one programme in a year.</run>
+          </formatted-text>
+        </zone>
+        <zone h='8333' w='46250' x='2500' y='27259' id='22' name='03 Where people are cared for' />
+        <zone h='8333' w='46250' x='51250' y='27259' id='23' name='04 Seven years of change' />
+        <zone forceUpdate='true' h='741' w='95000' x='2500' y='36333' id='24' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Medium' fontsize='12' fontcolor='#2a78d6'>04  </run>
+            <run fontname='Georgia' fontsize='19' fontcolor='#0b0b0b' bold='true'>Who uses aged care</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='2944' w='95000' x='2500' y='37185' id='25' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Book' fontsize='10' fontcolor='#52514e'>Age, more than anything else, decides whether someone uses aged care. Among Australians aged 65 to 69, four in every thousand spent time in permanent residential care during 2024-25. Among those aged 90 and over, it was 414 in every thousand, more than a hundred times the rate. Put another way: of every 100 Australians aged 90 and over, 41 spent time in permanent residential care last year. Many of the rest were helped at home: 308 in every 1,000 held a Home Care Package and 397 used home support.</run>
+          </formatted-text>
+        </zone>
+        <zone h='8333' w='46250' x='2500' y='40315' id='26' name='05 Care use by age' />
+        <zone h='8333' w='35750' x='51250' y='40315' id='27' name='06 Of every 100 aged 90+' />
+        <zone h='2778' w='9833' x='87667' y='41611' id='28' name='06 Of every 100 aged 90+' pane-specification-id='0' param='[federated.0waffle00000000000000000].[none:category:nk]' type-v2='color' />
+        <zone forceUpdate='true' h='741' w='95000' x='2500' y='49389' id='29' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Medium' fontsize='12' fontcolor='#2a78d6'>05  </run>
+            <run fontname='Georgia' fontsize='19' fontcolor='#0b0b0b' bold='true'>City and country gap</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='2444' w='95000' x='2500' y='50241' id='30' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Book' fontsize='10' fontcolor='#52514e'>Residential aged care is not spread evenly across the country. For every 1,000 people aged 65 and over, major cities have 48 residential places. Very remote Australia has 10.5, roughly a fifth as many. The places that do exist outside the cities are also the least used: 90 per cent of places were occupied nationally in 2025, but only 76 per cent in very remote areas. Fewer places, and a larger share of them sitting empty. The data shows the pattern, not the cause.</run>
+          </formatted-text>
+        </zone>
+        <zone h='8333' w='46250' x='2500' y='52870' id='31' name='07 Places by remoteness' />
+        <zone h='8333' w='46250' x='51250' y='52870' id='32' name='08 Occupancy vs national' />
+        <zone forceUpdate='true' h='741' w='95000' x='2500' y='61944' id='33' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Medium' fontsize='12' fontcolor='#2a78d6'>06  </run>
+            <run fontname='Georgia' fontsize='19' fontcolor='#0b0b0b' bold='true'>Paying for it</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='2444' w='95000' x='2500' y='62796' id='34' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Book' fontsize='10' fontcolor='#52514e'>Governments spent $39.8 billion on aged care in 2024-25. A decade earlier, counted in the same dollars, it was $20.3 billion. Almost all of the $19.5 billion increase came from two places: residential and flexible care added $10.9 billion, and home care and support added $7.7 billion. Home care grew far faster in proportion, to two and a half times its 2014-15 size, yet residential care still takes 64 cents in every dollar.</run>
+          </formatted-text>
+        </zone>
+        <zone h='8333' w='35750' x='2500' y='65426' id='35' name='09 Where the extra billions went' />
+        <zone h='2778' w='9833' x='38917' y='66722' id='36' name='09 Where the extra billions went' pane-specification-id='0' param='[federated.0wfall000000000000000000].[none:type:nk]' type-v2='color' />
+        <zone h='8333' w='46250' x='51250' y='65426' id='37' name='10 What the money buys' />
+        <zone forceUpdate='true' h='741' w='95000' x='2500' y='74500' id='38' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Medium' fontsize='12' fontcolor='#2a78d6'>07  </run>
+            <run fontname='Georgia' fontsize='19' fontcolor='#0b0b0b' bold='true'>State by state</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='2444' w='95000' x='2500' y='75352' id='39' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Book' fontsize='10' fontcolor='#52514e'>Every state and territory leans on a different mix. South Australia has the highest rate of both permanent residential care (55 per 1,000 aged 65 and over) and Home Care Packages (81). The Northern Territory sits far below every other jurisdiction on residential care, at 19 per 1,000, but it hosts 21 of Australia&apos;s 47 National Aboriginal and Torres Strait Islander Flexible Aged Care services, which are counted outside these figures. Its low number is not a simple shortage.</run>
+          </formatted-text>
+        </zone>
+        <zone h='8333' w='46250' x='2500' y='77981' id='40' name='11 Two programmes by state' />
+        <zone h='8333' w='35750' x='51250' y='77981' id='41' name='12 Care mix by population' />
+        <zone h='2778' w='9833' x='87667' y='79278' id='42' name='12 Care mix by population' pane-specification-id='0' param='[federated.0mekko000000000000000000].[none:programme:nk]' type-v2='color' />
+        <zone forceUpdate='true' h='741' w='95000' x='2500' y='87056' id='43' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Medium' fontsize='12' fontcolor='#2a78d6'>08  </run>
+            <run fontname='Georgia' fontsize='19' fontcolor='#0b0b0b' bold='true'>What today&apos;s patterns would produce</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='5556' w='95000' x='2500' y='87870' id='44' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Book' fontsize='10' fontcolor='#52514e'>Three things are happening at once. The number of Australians aged 85 and over will more than double by 2045. The system has been steadily moving people out of residential care and into care at home. And the bill has already doubled in ten years.</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='10' fontcolor='#52514e'>If Australians used aged care in 2045 exactly as they did in 2024-25, and only the population changed, permanent residential care would need to serve about 533,000 people, up from roughly 261,000 today. Home Care Packages would need to serve about 662,000, up from 354,000.</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='10' fontcolor='#52514e'>That is not a forecast. It is simply what today&apos;s patterns would produce if nothing else moved. Everything that could move, how many places get built, how many people can be found to staff them, and how much governments are willing to spend, has to be decided around it.</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='4815' w='95000' x='2500' y='93704' id='45' type-v2='text'>
+          <formatted-text>
+            <run fontname='Tableau Book' fontsize='8' fontcolor='#52514e' bold='true'>Growing Old in Australia  ·  Ian Leong (34423680)  ·  FIT3179 Data Visualisation, Monash University  ·  September 2026</run>
+            <run>Æ&#10;</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='8' fontcolor='#52514e' bold='true'>Data sources.</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='8' fontcolor='#898781'>Productivity Commission, Report on Government Services 2026, Part F Section 14: Aged care services. pc.gov.au/ongoing/report-on-government-services/community-services/aged-care-services</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='8' fontcolor='#898781'>Australian Bureau of Statistics, National, state and territory population, December 2025, Table 59. abs.gov.au/statistics/people/population/national-state-and-territory-population</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='8' fontcolor='#898781'>Australian Bureau of Statistics, Population Projections, Australia, 2022 (base) to 2071, Series B, Table B9. abs.gov.au/statistics/people/population/population-projections-australia</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='8' fontcolor='#898781'>AIHW / Department of Health, Disability and Ageing, Aged Care Data Snapshot 2025. gen-agedcaredata.gov.au</run>
+            <run>Æ&#10;</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='8' fontcolor='#898781'>Aged care figures are financial years to 30 June 2025 (the most recent published). Population is at 30 June. Spending is in constant 2024-25 dollars. Rates are people per 1,000 residents aged 65 and over.</run>
+            <run>Æ&#10;</run>
+            <run>Æ&#10;</run>
+            <run fontname='Tableau Book' fontsize='8' fontcolor='#898781'>Use of generative AI. Generative AI (Claude) was used to help locate and reshape the source data, to draft and edit the narrative text, and to review the visual design. All charts were designed and built by the author.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{2B65A81C-4422-469D-ADC9-8B92471F1154}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='69'>
+    <window class='worksheet' name='01 Older Australians'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3615A628-AB89-4992-A6D6-CA56C67A9224}' />
+    </window>
+    <window class='worksheet' name='02 Population pyramid'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2C621FCD-381B-471B-B818-095E97BBFA08}' />
+    </window>
+    <window class='worksheet' name='03 Where people are cared for'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2296580A-2400-4008-ADE7-2BB50D81D53C}' />
+    </window>
+    <window class='worksheet' name='04 Seven years of change'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{991C232C-F3AE-4E7D-A899-C62CC36E43A0}' />
+    </window>
+    <window class='worksheet' name='05 Care use by age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{195037B3-BDB7-46B4-A501-61C73D43E116}' />
+    </window>
+    <window class='worksheet' name='06 Of every 100 aged 90+'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{CE994FF6-0E9B-4787-BF6A-56E5F0CFA69E}' />
+    </window>
+    <window class='worksheet' name='07 Places by remoteness'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BCCCA156-5012-4D85-83F4-570334BEA459}' />
+    </window>
+    <window class='worksheet' name='08 Occupancy vs national'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E21A6743-6D72-42E1-A44D-4108B8FCA606}' />
+    </window>
+    <window class='worksheet' name='09 Where the extra billions went'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9B662DB9-1688-43D8-AF6E-3460934FDE5A}' />
+    </window>
+    <window class='worksheet' name='10 What the money buys'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2F8E39EB-5533-4365-9C24-BAB6004A2807}' />
+    </window>
+    <window class='worksheet' name='11 Two programmes by state'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{83ABCEFD-31BE-4916-936F-BE8A0F343D95}' />
+    </window>
+    <window class='worksheet' name='12 Care mix by population'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{07B6A052-3FD0-45CB-A7D1-F28315A6237E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Growing Old in Australia'>
+      <viewpoints>
+        <viewpoint name='01 Older Australians'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='02 Population pyramid'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='03 Where people are cared for'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='04 Seven years of change'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='05 Care use by age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='06 Of every 100 aged 90+'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='07 Places by remoteness'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='08 Occupancy vs national'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='09 Where the extra billions went'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='10 What the money buys'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='11 Two programmes by state'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='12 Care mix by population'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A975D26D-5A83-4CAA-9B7D-1FA81C6B37E2}' />
+    </window>
+  </windows>
+</workbook>
